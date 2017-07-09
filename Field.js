@@ -42,50 +42,43 @@ angular.module("AFootball")
 
 			// compute x coordinate for visitor goal line.  that's 30 feet (10 yards)
 			// times the scale plus the margin
-			var x = imargin + 30 * scale;
+			var x = imargin; // + 30 * scale;
+			var y = imargin;
 
 			// get the field
 			var field = document.getElementById('field');
 			field.style.position = "fixed";
 
 			var border = document.createElement('div');
-			border.style.borderLeft='medium solid';
+			border.style.borderTop='medium solid';
 			border.style.position='absolute';
-			border.style.left = '0px';
-			border.style.height = height;
+			border.style.left = x.toString() + 'px';
+			border.style.width = width;
+			border.style.top = y.toString() + 'px';
 			border.style.border = '1px solid white';
 			field.appendChild(border);
+
+			y = 1 + y + iheight * scale;
 
 			var border = document.createElement('div');
-			border.style.borderLeft='medium solid';
+			border.style.borderTop='medium solid';
 			border.style.position='absolute';
+			border.style.left = x.toString() + 'px';
 			border.style.width = width;
-			border.style.top = '0px';
+			border.style.top = y.toString() + 'px';
 			border.style.border = '1px solid white';
 			field.appendChild(border);
 
-			border = document.createElement('div');
-			border.style.borderLeft='medium solid';
-			border.style.position='absolute';
-			border.style.left = width;
-			border.style.height = height;
-			border.style.border = '1px solid white';
-			field.appendChild(border);
-
-			border = document.createElement('div');
-			border.style.borderLeft='medium solid';
-			border.style.position='absolute';
-			border.style.top = height;
-			border.style.width = width;
-			border.style.border = '1px solid white';
-			field.appendChild(border);
+			var y = imargin;
+			var x = imargin;
 
 			// draw the yard and goal lines, every 10 yards
-			for(var i=0; i<=10; i++) {
+			for(var i=0; i<=12; i++) {
 			var yardline = document.createElement('div');
 			yardline.style.borderLeft='medium solid';
 			yardline.style.position='absolute';
 			yardline.style.left = x.toString() + 'px';
+			yardline.style.top = y.toString() + 'px';
 			yardline.style.height = height;
 			yardline.style.border = '1px solid white';
 			field.appendChild(yardline);
@@ -96,18 +89,18 @@ angular.module("AFootball")
 			// draw the hash marks
 			x = imargin + 30 * scale;
 			for(var i=0; i<=100; i++) {
-			for(var j=0; j<4; j++) {
-				var hashmark = document.createElement('div');
-				hashmark.style.borderLeft='medium solid';
-				hashmark.style.position='absolute';
-				hashmark.style.left = x.toString() + 'px';
-				hashmark.style.top = hashtop[j].toString() + 'px';
-				hashmark.style.height = hashsize.toString() + "px";
-				hashmark.style.border = '1px solid white';
-				field.appendChild(hashmark);
-			}
+				for(var j=0; j<4; j++) {
+					var hashmark = document.createElement('div');
+					hashmark.style.borderLeft='medium solid';
+					hashmark.style.position='absolute';
+					hashmark.style.left = x.toString() + 'px';
+					hashmark.style.top = hashtop[j].toString() + 'px';
+					hashmark.style.height = hashsize.toString() + "px";
+					hashmark.style.border = '1px solid white';
+					field.appendChild(hashmark);
+				}
 
-			x = x + 3 * scale;
+				x = x + 3 * scale;
 			}
 
 			var fontSize = scale * 75;
@@ -119,57 +112,10 @@ angular.module("AFootball")
 
 			for(var i=0; i<22; i+=2)
 			{
-			var yardnumber = document.createElement('div');
-			yardnumber.style.position='absolute';
-			yardnumber.style.left = x.toString() + 'px';
-			yardnumber.style.top = '30px';
-			yardnumber.style.height = boxsize;
-			yardnumber.style.width = boxsize;
-			yardnumber.innerText = yardnumbers[i];
-			yardnumber.style.textAlign = 'left';
-			yardnumber.style.fontSize = fontSize.toString() + '%';
-			yardnumber.style.fontFamily = 'Impact';
-			yardnumber.style.color = 'white';
-			// yardnumber.style.border = '1px solid white';
-			field.appendChild(yardnumber);
-
-			yardnumber = document.createElement('div');
-			yardnumber.style.position='absolute';
-			yardnumber.style.left = x.toString() + 'px';
-			yardnumber.style.top = '30px';
-			yardnumber.style.height = boxsize;
-			yardnumber.style.width = boxsize;
-			yardnumber.innerText = yardnumbers[i+1];
-			yardnumber.style.textAlign = 'right';
-			yardnumber.style.fontSize = fontSize.toString() + '%';
-			yardnumber.style.fontFamily = 'Impact';
-			yardnumber.style.color = 'white';
-			// yardnumber.style.border = '1px solid white';
-			field.appendChild(yardnumber);
-
-			var y = h - 55;
-
-			if(i == 0) {
-				yardnumber = document.createElement('div');
+				var yardnumber = document.createElement('div');
 				yardnumber.style.position='absolute';
 				yardnumber.style.left = x.toString() + 'px';
-				yardnumber.style.top = y.toString() + 'px';
-				yardnumber.style.height = boxsize;
-				yardnumber.style.width = boxsize;
-				yardnumber.innerText = yardnumbers[i+1];
-				yardnumber.style.textAlign = 'left';
-				yardnumber.style.fontSize = fontSize.toString() + '%';
-				yardnumber.style.fontFamily = 'Impact';
-				yardnumber.style.color = 'white';
-				yardnumber.style.transform = 'rotate(180deg)'
-				// yardnumber.style.border = '1px solid white';
-				field.appendChild(yardnumber);
-			}
-			else {
-				yardnumber = document.createElement('div');
-				yardnumber.style.position='absolute';
-				yardnumber.style.left = x.toString() + 'px';
-				yardnumber.style.top = y.toString() + 'px';
+				yardnumber.style.top = '30px';
 				yardnumber.style.height = boxsize;
 				yardnumber.style.width = boxsize;
 				yardnumber.innerText = yardnumbers[i];
@@ -177,14 +123,13 @@ angular.module("AFootball")
 				yardnumber.style.fontSize = fontSize.toString() + '%';
 				yardnumber.style.fontFamily = 'Impact';
 				yardnumber.style.color = 'white';
-				yardnumber.style.transform = 'rotate(180deg)'
 				// yardnumber.style.border = '1px solid white';
 				field.appendChild(yardnumber);
 
 				yardnumber = document.createElement('div');
 				yardnumber.style.position='absolute';
 				yardnumber.style.left = x.toString() + 'px';
-				yardnumber.style.top = y.toString() + 'px';
+				yardnumber.style.top = '30px';
 				yardnumber.style.height = boxsize;
 				yardnumber.style.width = boxsize;
 				yardnumber.innerText = yardnumbers[i+1];
@@ -192,19 +137,69 @@ angular.module("AFootball")
 				yardnumber.style.fontSize = fontSize.toString() + '%';
 				yardnumber.style.fontFamily = 'Impact';
 				yardnumber.style.color = 'white';
-				yardnumber.style.transform = 'rotate(180deg)'
 				// yardnumber.style.border = '1px solid white';
 				field.appendChild(yardnumber);
+
+				var y = h - 55;
+
+				if(i == 0) {
+					yardnumber = document.createElement('div');
+					yardnumber.style.position='absolute';
+					yardnumber.style.left = x.toString() + 'px';
+					yardnumber.style.top = y.toString() + 'px';
+					yardnumber.style.height = boxsize;
+					yardnumber.style.width = boxsize;
+					yardnumber.innerText = yardnumbers[i+1];
+					yardnumber.style.textAlign = 'left';
+					yardnumber.style.fontSize = fontSize.toString() + '%';
+					yardnumber.style.fontFamily = 'Impact';
+					yardnumber.style.color = 'white';
+					yardnumber.style.transform = 'rotate(180deg)'
+					// yardnumber.style.border = '1px solid white';
+					field.appendChild(yardnumber);
+				}
+				else {
+					yardnumber = document.createElement('div');
+					yardnumber.style.position='absolute';
+					yardnumber.style.left = x.toString() + 'px';
+					yardnumber.style.top = y.toString() + 'px';
+					yardnumber.style.height = boxsize;
+					yardnumber.style.width = boxsize;
+					yardnumber.innerText = yardnumbers[i];
+					yardnumber.style.textAlign = 'left';
+					yardnumber.style.fontSize = fontSize.toString() + '%';
+					yardnumber.style.fontFamily = 'Impact';
+					yardnumber.style.color = 'white';
+					yardnumber.style.transform = 'rotate(180deg)'
+					// yardnumber.style.border = '1px solid white';
+					field.appendChild(yardnumber);
+
+					yardnumber = document.createElement('div');
+					yardnumber.style.position='absolute';
+					yardnumber.style.left = x.toString() + 'px';
+					yardnumber.style.top = y.toString() + 'px';
+					yardnumber.style.height = boxsize;
+					yardnumber.style.width = boxsize;
+					yardnumber.innerText = yardnumbers[i+1];
+					yardnumber.style.textAlign = 'right';
+					yardnumber.style.fontSize = fontSize.toString() + '%';
+					yardnumber.style.fontFamily = 'Impact';
+					yardnumber.style.color = 'white';
+					yardnumber.style.transform = 'rotate(180deg)'
+					// yardnumber.style.border = '1px solid white';
+					field.appendChild(yardnumber);
+				}
+
+				x = x + 30 * scale;
 			}
 
-			x = x + 30 * scale;
-			}
-
+			var y = imargin;
 			var x = imargin + 30 * scale;
 			lineofscrimmage = document.createElement('div');
 			lineofscrimmage.style.borderLeft='medium solid';
 			lineofscrimmage.style.position='absolute';
 			lineofscrimmage.style.left = x.toString() + 'px';
+			lineofscrimmage.style.top = y.toString() + 'px';
 			lineofscrimmage.style.height = height;
 			lineofscrimmage.style.border = '1px solid blue';
 			field.appendChild(lineofscrimmage);
@@ -213,6 +208,7 @@ angular.module("AFootball")
 			linetomake.style.borderLeft='medium solid';
 			linetomake.style.position='absolute';
 			linetomake.style.left = x.toString() + 'px';
+			linetomake.style.top = y.toString() + 'px';
 			linetomake.style.height = height;
 			linetomake.style.border = '1px solid yellow';
 			field.appendChild(linetomake);
