@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="AFootball">
+
+  <head>
+    <script data-require="angular.js@1.6.2" data-semver="1.6.2" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.js"></script>
+    <script data-require="angular-animate@1.6.2" data-semver="1.6.2" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular-animate.js"></script>
+    <script data-require="angular-route@1.5.8" data-semver="1.5.8" src="https://code.angularjs.org/1.5.8/angular-route.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="AFootball.js"></script>
+    <script src="scoreboard.js"></script>
+    <script src="field.js"></script>
+    <script src="output.js"></script>
+    <script src="options.js"></script>
+  </head>
+
+  <body>
+	<div ng-controller="AFootballCtrl as ctrl"> 
+		<scoreboard title="ctrl.title" name="John"></scoreboard>
+		<field title="ctrl.title" name="Sam"></field>
+		<output title="ctrl.title" name="Sam"></output>
+		<options title="ctrl.title" name="Sam"></options>
+	</div>
+  </body>
+
+</html>
