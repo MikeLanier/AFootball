@@ -14,12 +14,29 @@
   </head>
 
   <body>
-	<div ng-controller="AFootballCtrl as ctrl"> 
-		<scoreboard title="ctrl.title" name="John"></scoreboard>
-		<field title="ctrl.title" name="Sam"></field>
-		<output title="ctrl.title" name="Sam"></output>
-		<options title="ctrl.title" name="Sam"></options>
+	<div ng-controller="AFootballCtrl as ctrl" class="football"> 
+		<scoreboard class="layout" title="ctrl.title" name="John"></scoreboard>
+		<field class="layout" title="ctrl.title" name="Sam"></field>
+		<output class="layout" title="ctrl.title" name="Sam"></output>
+		<options class="layout" title="ctrl.title" name="Sam"></options>
 	</div>
   </body>
 
 </html>
+
+<style>
+.layout {
+	display: inline;
+}
+.football {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	margin: 5px;
+	border: 1px solid black;
+	border-radius: 5px;
+	background-color: green;
+}
+</style>
