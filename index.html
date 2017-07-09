@@ -12,59 +12,90 @@
     <script src="output.js"></script>
     <script src="options.js"></script>
     <script src="stats.js"></script>
+    <script src="debug.js"></script>
   </head>
 
   <body>
-	<div ng-controller="AFootballCtrl as ctrl" class="football"> 
-		<!--<div style="display: block">-->
-			<scoreboard class="layout scoreboard" title="ctrl.title" name="John"></scoreboard>
-			<field class="layout field" title="ctrl.title" name="Sam"></field>
-			<output class="layout output" title="ctrl.title" name="Sam"></output>
-			<options class="layout options" title="ctrl.title" name="Sam"></options>
-		<!--</div>-->
-		<!--<div>-->
-			<!--<stats class="layout stats" title="ctrl.title" name="Sam"></stats>-->
-		<!--</div>-->
+	<div ng-controller="AFootballCtrl as ctrl" class="football">
+		<div class="left-panels">
+			<scoreboard></scoreboard>
+			<field></field>
+			<output></output>
+			<options></options>
+		</div>
+		<div class="right-panels">
+			<stats></stats>
+			<debug></debug>
+		</div>
 	</div>
   </body>
 
 </html>
 
 <style>
-.layout {
-	/*display: inline;*/
-	background-color: greenyellow;
-	position: relative;
+/*div {display:inline-block}*/
+
+.left-panels {
+	width: 70%;
+	height: 100%;
+}
+
+.right-panels {
+	width: 20%;
+	height: 100%;
+}
+
+.border {
+	margin: 2px;
+	border: 1px solid black;
+	border-radius: 5px;
 }
 .scoreboard {
-	width: 70%;
+	width: 100%;
 	height: 15%;
+	background-color: brown;
 }
 .field {
-	width: 70%;
-	height: 40%;
+	width: 100%;
+	height: 53%;
+	background-color: yellow;
 }
 .output {
-	width: 70%;
+	width: 100%;
 	height: 15%;
+	background-color: lightblue;
 }
 .options {
-	width: 70%;
+	width: 100%;
 	height: 15%;
+	background-color: pink;
 }
 .stats {
-	width: 25%;
-	height: 90%;
+	position:fixed;
+	right:2px;
+	top: 2px;
+	width: 29%;
+	height: 93%;
+	background-color: orange;
+}
+.debug {
+	position:fixed;
+	right:2px;
+	bottom: 2px;
+	width: 29%;
+	height: 5%;
+	background-color: orange;
 }
 .football {
-	position: fixed;
+	position: absolute;
 	left: 0px;
 	top: 0px;
 	right: 0px;
 	bottom: 0px;
-	margin: 5px;
+	/*margin: 5px;*/
 	border: 1px solid black;
-	border-radius: 5px;
+	/*border-radius: 5px;*/
 	background-color: green;
+	display: inline-block;
 }
 </style>
