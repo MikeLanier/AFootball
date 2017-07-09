@@ -11,14 +11,20 @@
     <script src="field.js"></script>
     <script src="output.js"></script>
     <script src="options.js"></script>
+    <script src="stats.js"></script>
   </head>
 
   <body>
 	<div ng-controller="AFootballCtrl as ctrl" class="football"> 
-		<scoreboard class="layout" title="ctrl.title" name="John"></scoreboard>
-		<field class="layout" title="ctrl.title" name="Sam"></field>
-		<output class="layout" title="ctrl.title" name="Sam"></output>
-		<options class="layout" title="ctrl.title" name="Sam"></options>
+		<!--<div style="display: block">-->
+			<scoreboard class="layout scoreboard" title="ctrl.title" name="John"></scoreboard>
+			<field class="layout field" title="ctrl.title" name="Sam"></field>
+			<output class="layout output" title="ctrl.title" name="Sam"></output>
+			<options class="layout options" title="ctrl.title" name="Sam"></options>
+		<!--</div>-->
+		<!--<div>-->
+			<!--<stats class="layout stats" title="ctrl.title" name="Sam"></stats>-->
+		<!--</div>-->
 	</div>
   </body>
 
@@ -26,7 +32,29 @@
 
 <style>
 .layout {
-	display: inline;
+	/*display: inline;*/
+	background-color: greenyellow;
+	position: relative;
+}
+.scoreboard {
+	width: 70%;
+	height: 15%;
+}
+.field {
+	width: 70%;
+	height: 40%;
+}
+.output {
+	width: 70%;
+	height: 15%;
+}
+.options {
+	width: 70%;
+	height: 15%;
+}
+.stats {
+	width: 25%;
+	height: 90%;
 }
 .football {
 	position: fixed;
