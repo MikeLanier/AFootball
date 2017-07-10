@@ -4,8 +4,8 @@ AFootball:
 		☐ define the gamedata and pass it to the panels
 		☐ when a team is selected from the team select side panel, load that team
 	scoreboard:
-		☐ working on code to resize the controls, but it not working very well and may not be the right answer anyway
-		☐ develop some non-resizing controls
+		✔ working on code to resize the controls, but it not working very well and may not be the right answer anyway @done (7/10/2017, 6:42:27 AM)
+		✔ develop some non-resizing controls @done (7/10/2017, 6:42:22 AM)
 		☐ add watchers to update the data in the controls when something in the gamedata changes
 		☐ when either the home or visitor name control is clicked, open the team select side panel and tell the controller to load the selected team
 	field:
@@ -17,8 +17,11 @@ AFootball:
 		drives:
 			☐ create code for the drives display
 	output:
+		☐ control for displaying multi colored text
+		☐ methods for adding text to display
 	options:
-		☐ add buttons for the different options.  buttons need to hilite on hover and on select
+		✔ add buttons for the different options. @done (7/10/2017, 6:42:48 AM)
+		☐ buttons need to hilite on hover and on select
 	stats:
 		☐ create a four column list for displaying the in game stats in the gamedata.  
 		☐ add watchers to update the in game stats display when something appropriate in the gamedata changes
