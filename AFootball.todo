@@ -1,11 +1,16 @@
 AFootball:
 	contoller:
 		☐ have code to detect that the frame size has changed and what the current size is.  Can I use this to tell the field that it needs to re-draw
-		☐ define the gamedata and pass it to the panels
+		✔ define the gamedata and pass it to the panels @done (7/10/2017, 10:06:11 AM)
 		☐ when a team is selected from the team select side panel, load that team
 	scoreboard:
 		✔ working on code to resize the controls, but it not working very well and may not be the right answer anyway @done (7/10/2017, 6:42:27 AM)
 		✔ develop some non-resizing controls @done (7/10/2017, 6:42:22 AM)
+		☐ initialize controls from gamedata
+			✔ those controls which get data directly from gamedata @done (7/10/2017, 10:08:12 AM)
+			☐ those controls which need their data computed
+				☐ add watch for down, distance, yardline, time
+				☐ build string for down and distance, ballon and time.
 		☐ add watchers to update the data in the controls when something in the gamedata changes
 		☐ when either the home or visitor name control is clicked, open the team select side panel and tell the controller to load the selected team
 	field:
