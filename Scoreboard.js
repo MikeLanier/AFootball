@@ -8,6 +8,18 @@ angular.module("AFootball")
 				console.log(scope.gamedata.name[0]);
 				console.log(scope.gamedata.name[1]);
 
+				scope.$watch('scope.gamedata', function() {
+					console.log("scope.gamedata: has changed");
+				});
+
+				scope.$watch('scope.gamedata.name[0]', function() {
+					console.log("scope.gamedata.name[0]: has changed");
+				});
+
+				scope.$watch('scope.gamedata.name[1]', function() {
+					console.log("scope.gamedata.name[1]: has changed");
+				});
+
 				scope.$watch('scope.gamedata.down', function() {
 					console.log("scope.gamedata.down: has changed");
 					scope.formatDownDistance(scope.gamedata);

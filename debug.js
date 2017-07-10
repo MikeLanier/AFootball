@@ -43,13 +43,14 @@ angular.module("AFootball")
 					var val = parseInt(items[2]);
 					// console.log('debug: who, val: ' + who.toString() + ', ' + val.toString())
 
-					gamedata.score[who][gamedata.quarter] = val;
+					scope.$apply(function() {
+						gamedata.score[who][gamedata.quarter] = val;
 					// console.log("debug: gamedata.score[0]: " + gamedata.score[0][0] + ", " + gamedata.score[0][1] + ", " + gamedata.score[0][2] + ", " + gamedata.score[0][3] + ", " + gamedata.score[0][4])
 					// console.log("debug: gamedata.score[1]: " + gamedata.score[1][0] + ", " + gamedata.score[1][1] + ", " + gamedata.score[1][2] + ", " + gamedata.score[1][3] + ", " + gamedata.score[0][4])
 
-					gamedata.name[0] = "HOME" + val.toString()
-					gamedata.name[1] = "VISITOR" + val.toString()
-
+						gamedata.name[0] = "HOME" + val.toString();
+						gamedata.name[1] = "VISITOR" + val.toString();
+					});
 				}
 				else
 				if(items[0] == 'q') {
