@@ -5,7 +5,7 @@ angular.module("AFootball", [])
 			title: 'AFootball'
 		};
 
-		var gamedata = {
+		$scope.gamedata = {
 			trigger: 0,
 			offense: 0,
 			defense: 1,
@@ -23,8 +23,6 @@ angular.module("AFootball", [])
 			teams: [ null, null ],
 			who: 0
 		};
-
-		$scope.gamedata = gamedata;
   	})
 	.directive('elheightresize', ['$window', function($window) {
     return {

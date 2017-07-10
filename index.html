@@ -16,16 +16,16 @@
   </head>
 
   <body>
-	<div id="frame" ng-controller="AFootballCtrl as ctrl" class="football" elheightresize>
+	<div id="frame" ng-controller="AFootballCtrl" class="football" elheightresize>
 		<div class="left-panels">
-			<scoreboard gamedata="ctrl.gamedata"></scoreboard>
-			<field gamedata="ctrl.gamedata"></field>
-			<output gamedata="ctrl.gamedata"></output>
-			<options gamedata="ctrl.gamedata"></options>
+			<scoreboard gamedata="gamedata"></scoreboard>
+			<field gamedata="gamedata"></field>
+			<output gamedata="gamedata"></output>
+			<options gamedata="gamedata"></options>
 		</div>
 		<div class="right-panels">
-			<stats gamedata="ctrl.gamedata"></stats>
-			<debug gamedata="ctrl.gamedata"></debug>
+			<stats gamedata="gamedata"></stats>
+			<debug gamedata="gamedata"></debug>
 		</div>
 	</div>
   </body>

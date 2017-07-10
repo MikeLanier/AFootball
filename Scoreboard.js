@@ -1,6 +1,7 @@
 angular.module("AFootball")
 	.directive('scoreboard', function() {
 		return {
+			scope: { gamedata: '=' },
 			templateUrl: "scoreboard.html",
 			link: function(scope, elem, attrs) {
 				console.log("scoreboard: link");
