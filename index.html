@@ -16,7 +16,7 @@
   </head>
 
   <body>
-	<div ng-controller="AFootballCtrl as ctrl" class="football">
+	<div id="frame" ng-controller="AFootballCtrl as ctrl" class="football" elheightresize>
 		<div class="left-panels">
 			<scoreboard></scoreboard>
 			<field></field>
@@ -36,7 +36,7 @@
 /*div {display:inline-block}*/
 
 .left-panels {
-	width: 70%;
+	width: 75%;
 	height: 100%;
 }
 
@@ -53,7 +53,7 @@
 .scoreboard {
 	width: 100%;
 	height: 15%;
-	background-color: khaki;
+	background-color: mediumseagreen;
 }
 .field {
 	width: 100%;
@@ -74,7 +74,7 @@
 	position:fixed;
 	right:2px;
 	top: 2px;
-	width: 29%;
+	width: 24%;
 	height: 93%;
 	background-color: bisque;
 }
@@ -82,7 +82,7 @@
 	position:fixed;
 	right:2px;
 	bottom: 2px;
-	width: 29%;
+	width: 24%;
 	height: 5%;
 	background-color: antiquewhite;
 }

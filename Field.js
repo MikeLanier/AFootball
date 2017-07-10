@@ -5,7 +5,7 @@ angular.module("AFootball")
 			name: "@",
 			title: "=" 
 		},
-		controller: function() {
+		controller: function($scope) {
 			console.log("field.js: controller");
 
 			var width = '360px';
