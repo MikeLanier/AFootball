@@ -1,2 +1,22 @@
 <div class="debug border">
+  <div style="margin:5px">
+    <input @keyup="keyup" id="junk" name="fname" class="debug-ctrl" checkKey>
+    <div @click="click" class="debug-go-button">Go</div>
+  </div>
 </div>
+
+<style>
+.debug-go-button {
+    border:1px solid black;
+    border-radius:5px;
+    background-color:white;
+    display:inline;
+}
+.debug-ctrl {
+    border:1px solid black;
+    /*border-radius:5px;*/
+    background-color:white;
+    /*display:inline;*/
+	width:90%;
+}
+</style>
