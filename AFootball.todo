@@ -1,0 +1,36 @@
+AFootball:
+	contoller:
+		☐ have code to detect that the frame size has changed and what the current size is.  Can I use this to tell the field that it needs to re-draw
+		☐ define the gamedata and pass it to the panels
+		☐ when a team is selected from the team select side panel, load that team
+	scoreboard:
+		☐ working on code to resize the controls, but it not working very well and may not be the right answer anyway
+		☐ develop some non-resizing controls
+		☐ add watchers to update the data in the controls when something in the gamedata changes
+		☐ when either the home or visitor name control is clicked, open the team select side panel and tell the controller to load the selected team
+	field:
+		☐ find a way to get the current size of the field panel and center the field
+		☐ find a way to detect that the size of the field panel has changes and redraw/recreate the field if there is a need to go to a smaller/larger scale. Applying a scale transformation would not look too good.
+		☐ functions for re-drawing the line of scrimmage, line to make and ball markers.
+		☐ add watchers to update the line of scrimmage, line to make and ball markers when something appropriate changes in the gamedata
+		☐ add watchers to draw a result icon when a new result is defined by a debug command
+		drives:
+			☐ create code for the drives display
+	output:
+	options:
+		☐ add buttons for the different options.  buttons need to hilite on hover and on select
+	stats:
+		☐ create a four column list for displaying the in game stats in the gamedata.  
+		☐ add watchers to update the in game stats display when something appropriate in the gamedata changes
+	debug:
+		☐ add and edit control in which to enter debug commmands
+		☐ add a function to get and parse the debug commmands
+		☐ if the command is a simple change to the gamedata, make sure the watchers in the other fields detect and respond to the change
+		☐ if the command is for an action, create an event to do that action.
+		☐ if the command defines a result for a play to run, 
+			☐ build a result item from the result class
+			☐ add that result to the debug result stack
+			☐ make sure the field detects the addition of the new result to the stack and updates the fields
+	running a play:
+		☐ get a result from either the debug result stack or the team data
+		☐ parse and react to the result
