@@ -14,7 +14,7 @@ angular.module("AFootball")
 		templateUrl: "debug.html",
         link: function(scope, elem, attrs) {
             elem.bind('keyup', function(event) {
-				console.log("checkKey: " + event.keyCode);
+				// console.log("checkKey: " + event.keyCode);
                 if (event.keyCode === 190) {
 					console.log("checkKey: period")
 				}
