@@ -6,12 +6,15 @@ AFootball:
 	scoreboard:
 		✔ working on code to resize the controls, but it not working very well and may not be the right answer anyway @done (7/10/2017, 6:42:27 AM)
 		✔ develop some non-resizing controls @done (7/10/2017, 6:42:22 AM)
-		☐ initialize controls from gamedata
+		✔ initialize controls from gamedata @done (7/10/2017, 10:32:31 AM)
 			✔ those controls which get data directly from gamedata @done (7/10/2017, 10:08:12 AM)
-			☐ those controls which need their data computed
-				☐ add watch for down, distance, yardline, time
-				☐ build string for down and distance, ballon and time.
+			✔ those controls which need their data computed @done (7/10/2017, 10:31:24 AM)
+				✔ add watch for down, distance, yardline, time @done (7/10/2017, 10:31:25 AM)
+				✔ build string for down and distance, ballon and time. @done (7/10/2017, 10:31:26 AM)
 		☐ add watchers to update the data in the controls when something in the gamedata changes
+			✔ create the watch functions @done (7/10/2017, 10:32:17 AM)
+			☐ change the data using debug commands and make sure the watch's are hit
+			☐ make sure the scoreboard updates
 		☐ when either the home or visitor name control is clicked, open the team select side panel and tell the controller to load the selected team
 	field:
 		☐ find a way to get the current size of the field panel and center the field
@@ -24,6 +27,7 @@ AFootball:
 	output:
 		☐ control for displaying multi colored text
 		☐ methods for adding text to display
+		☐ text ctrl auto resize in height and width
 	options:
 		✔ add buttons for the different options. @done (7/10/2017, 6:42:48 AM)
 		☐ buttons need to hilite on hover and on select

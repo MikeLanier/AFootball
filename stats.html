@@ -1,2 +1,63 @@
 <div class="stats border">
+    <div class="stats-panel black-border white-background">
+		<table class="fixed" style="background-color: white" border="1">
+			<tr>
+				<th>{{stats_title.label}}</th>
+				<th>{{stats_title.sublabel}}</th>
+				<th>{{stats_title.home_value}}</th>
+				<th>{{stats_title.visitor_value}}</th>
+			</tr>
+			<tr ng-repeat="stat_item in stat_items">
+				<td>{{stat_item.label}}</td>
+				<td>{{stat_item.sublabel}}</td>
+				<td>{{stat_item.home_value}}</td>
+				<td>{{stat_item.visitor_value}}</td>
+			</tr>
+		</table>
+	</div>
 </div>
+
+<style>
+.stats-panel {
+  position:absolute;
+  margin: 5px;
+  top:0px;
+  left:0px;
+  right:0px;
+  bottom: 0px;
+}
+/*.black-border {
+  border:2px solid black;
+  border-radius:5px;
+  margin:3px;
+}*/
+.white-background {
+  background-color: white;
+}
+table.fixed {
+	table-layout:fixed; 
+	width:100%;
+}/*Setting the table width is important!*/
+
+table.fixed td {
+	overflow:hidden;		/*Hide text outside the cell.*/
+}
+
+table.fixed td:nth-of-type(1) {
+	width:200px;			/*Setting the width of column 1.*/
+}
+
+table.fixed td:nth-of-type(2) {
+	width:100px;			/*Setting the width of column 2.*/
+}
+
+table.fixed td:nth-of-type(3) {
+	width:25px;				/*Setting the width of column 3.*/
+	text-align: center;
+}
+
+table.fixed td:nth-of-type(4) {
+	width:25px;				/*Setting the width of column 3.*/
+	text-align: center;
+}
+</style>
