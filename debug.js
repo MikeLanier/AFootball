@@ -7,10 +7,10 @@ angular.module("AFootball")
 			scope.message = "";
             elem.bind('keyup', function(event) {
 
-				// console.log("keyup: " + scope.message);
+				console.log("keyup: " + scope.message);
                 if (event.keyCode === 190) {
-					// console.log("checkKey: period")
-	                // this.message = this.message.substr(0,i);
+					console.log("checkKey: period")
+	                // scope.message = scope.message.substr(0,i);
 	                // this.click();
 					scope.parse(scope.message, scope.gamedata);
 					scope.message = "";
@@ -75,6 +75,14 @@ angular.module("AFootball")
 				if(items[0] == 't') {
 					scope.$apply(function() {
 						gamedata.time = parseInt(items[1]);
+					});
+				}
+				else
+				if(items[0] == 'z.') {
+					console.log("open panel")
+			        document.getElementById("mySidenav").style.width = "250px";
+					scope.$apply(function() {
+						gamedata.trigger = !gamedata.trigger;
 					});
 				}
 				else
