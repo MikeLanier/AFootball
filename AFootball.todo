@@ -11,10 +11,10 @@ AFootball:
 			✔ those controls which need their data computed @done (7/10/2017, 10:31:24 AM)
 				✔ add watch for down, distance, yardline, time @done (7/10/2017, 10:31:25 AM)
 				✔ build string for down and distance, ballon and time. @done (7/10/2017, 10:31:26 AM)
-		☐ add watchers to update the data in the controls when something in the gamedata changes
+		✔ add watchers to update the data in the controls when something in the gamedata changes @done (7/10/2017, 8:12:59 PM)
 			✔ create the watch functions @done (7/10/2017, 10:32:17 AM)
-			☐ change the data using debug commands and make sure the watch's are hit
-			☐ make sure the scoreboard updates
+			✔ change the data using debug commands and make sure the watch's are hit @done (7/10/2017, 8:12:55 PM)
+			✔ make sure the scoreboard updates @done (7/10/2017, 8:12:57 PM)
 		☐ when either the home or visitor name control is clicked, open the team select side panel and tell the controller to load the selected team
 	field:
 		☐ find a way to get the current size of the field panel and center the field
@@ -35,9 +35,9 @@ AFootball:
 		☐ create a four column list for displaying the in game stats in the gamedata.  
 		☐ add watchers to update the in game stats display when something appropriate in the gamedata changes
 	debug:
-		☐ add and edit control in which to enter debug commmands
-		☐ add a function to get and parse the debug commmands
-		☐ if the command is a simple change to the gamedata, make sure the watchers in the other fields detect and respond to the change
+		✔ add an edit control in which to enter debug commmands @done (7/10/2017, 8:13:18 PM)
+		✔ add a function to get and parse the debug commmands @done (7/10/2017, 8:13:21 PM)
+		✔ if the command is a simple change to the gamedata, make sure the watchers in the other fields detect and respond to the change @done (7/10/2017, 8:13:26 PM)
 		☐ if the command is for an action, create an event to do that action.
 		☐ if the command defines a result for a play to run, 
 			☐ build a result item from the result class
