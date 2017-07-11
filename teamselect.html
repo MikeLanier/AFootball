@@ -1,12 +1,13 @@
 <div class="border">
     <div id="mySidenav" class="sidenav">
-        <div class="closebtn" @click="closeNav"><img src="/src/assets/CANCEL_CLOSE.bmp"></img></div>
-		<div class="title">{{junk.name}}</div>
+        <div class="closebtn" ng-click="closeNav()"><img src="./assets/CANCEL_CLOSE.bmp"></img></div>
+		<div class="title">{{what.title}}</div>
 
         <ul id="example-1">
-            <li v-for="item in junk.teams" :key="item.id" style="list-style: none">
-				<v-team-select-item :team="item" @loadteam="loadteam">
-				</v-team-select-item>					
+            <li ng-repeat="item in junk.teams track by item.key" style="list-style: none">
+				{{item.key}}
+				<!--<v-team-select-item :team="item" @loadteam="loadteam">
+				</v-team-select-item>					-->
             </li>
         </ul>
     </div>
@@ -26,7 +27,7 @@
     z-index: 1; /* Stay on top */
     top: 0;
     left: 0;
-    background-color: #111; /* Black*/
+    background-color: white; /* Black*/
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
