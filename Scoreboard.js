@@ -8,54 +8,111 @@ angular.module("AFootball")
 				console.log(scope.gamedata.name[0]);
 				console.log(scope.gamedata.name[1]);
 
-				scope.$watch('scope.gamedata', function() {
-					console.log("scope.gamedata: has changed");
-				});
+				scope.$watch(
+					// This is the important part
+					function() {
+						return scope.gamedata.down;
+					},
 
-				scope.$watch('scope.gamedata.name[0]', function() {
-					console.log("scope.gamedata.name[0]: has changed");
-				});
+					function(newValue, oldValue) {
+						console.log("scope.gamedata.down: has changed");
+						scope.formatDownDistance(scope.gamedata);
+						scope.format_ballon(scope.gamedata);
+					},
+					true
+				);
 
-				scope.$watch('scope.gamedata.name[1]', function() {
-					console.log("scope.gamedata.name[1]: has changed");
-				});
+				// scope.$watch('scope.gamedata.down', function() {
+				// 	console.log("scope.gamedata.down: has changed");
+				// 	scope.formatDownDistance(scope.gamedata);
+				// 	scope.format_ballon(scope.gamedata);
+				// });
 
-				scope.$watch('scope.gamedata.down', function() {
-					console.log("scope.gamedata.down: has changed");
-					scope.formatDownDistance(scope.gamedata);
-					scope.format_ballon(scope.gamedata);
-				});
+				scope.$watch(
+					// This is the important part
+					function() {
+						return scope.gamedata.yardline;
+					},
 
-				scope.$watch('scope.gamedata.yardline', function() {
-					console.log("scope.gamedata.yardline: has changed");
-					scope.formatDownDistance(scope.gamedata);
-					scope.format_ballon(scope.gamedata);
-				});
+					function(newValue, oldValue) {
+						console.log("scope.gamedata.yardline: has changed");
+						scope.formatDownDistance(scope.gamedata);
+						scope.format_ballon(scope.gamedata);
+					},
+					true
+				);
 
-				scope.$watch('scope.gamedata.togo', function() {
-					console.log("scope.gamedata.togo: has changed");
-					scope.formatDownDistance(scope.gamedata);
-					scope.format_ballon(scope.gamedata);
-				});
+				// scope.$watch('scope.gamedata.yardline', function() {
+				// 	console.log("scope.gamedata.yardline: has changed");
+				// 	scope.formatDownDistance(scope.gamedata);
+				// 	scope.format_ballon(scope.gamedata);
+				// });
 
-				scope.$watch('scope.gamedata.time', function() {
-					console.log("scope.gamedata.time: has changed");
+				scope.$watch(
+					// This is the important part
+					function() {
+						return scope.gamedata.togo;
+					},
 
-					var min = Math.floor(scope.gamedata.time / 60);
-					var sec = scope.gamedata.time - (min * 60);
-					console.log("   min, sec: " + min.toString() + ", " + sec.toString())
+					function(newValue, oldValue) {
+						console.log("scope.gamedata.togo: has changed");
+						scope.formatDownDistance(scope.gamedata);
+						scope.format_ballon(scope.gamedata);
+					},
+					true
+				);
 
-					scope.time = min.toString();
-					if(sec < 10)
-					{
-						scope.time = scope.time + ":0";
-					}
-					else
-					{
-						scope.time = scope.time + ":";
-					}
-					scope.time = scope.time + sec.toString();
-				});
+				// scope.$watch('scope.gamedata.togo', function() {
+				// 	console.log("scope.gamedata.togo: has changed");
+				// 	scope.formatDownDistance(scope.gamedata);
+				// 	scope.format_ballon(scope.gamedata);
+				// });
+
+				scope.$watch(
+					// This is the important part
+					function() {
+						return scope.gamedata.time;
+					},
+
+					function(newValue, oldValue) {
+						console.log("scope.gamedata.time: has changed");
+
+						var min = Math.floor(scope.gamedata.time / 60);
+						var sec = scope.gamedata.time - (min * 60);
+						console.log("   min, sec: " + min.toString() + ", " + sec.toString())
+
+						scope.time = min.toString();
+						if(sec < 10)
+						{
+							scope.time = scope.time + ":0";
+						}
+						else
+						{
+							scope.time = scope.time + ":";
+						}
+						scope.time = scope.time + sec.toString();
+						},
+					true
+				);
+
+				// scope.$watch('scope.gamedata.time', function() {
+				// 	console.log("scope.gamedata.time: has changed");
+
+				// 	var min = Math.floor(scope.gamedata.time / 60);
+				// 	var sec = scope.gamedata.time - (min * 60);
+				// 	console.log("   min, sec: " + min.toString() + ", " + sec.toString())
+
+				// 	scope.time = min.toString();
+				// 	if(sec < 10)
+				// 	{
+				// 		scope.time = scope.time + ":0";
+				// 	}
+				// 	else
+				// 	{
+				// 		scope.time = scope.time + ":";
+				// 	}
+				// 	scope.time = scope.time + sec.toString();
+				// });
 
 				scope.formatDownDistance = function(gamedata) {
 					console.log("formatDownDistance: " + gamedata.down + ", " + gamedata.togo);

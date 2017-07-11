@@ -54,35 +54,45 @@ angular.module("AFootball")
 				}
 				else
 				if(items[0] == 'q') {
-					gamedata.quarter = parseInt(items[1]);
+					scope.$apply(function() {
+						gamedata.quarter = parseInt(items[1]);
+					});
 				}
 				else
 				if(items[0] == 'y') {
 					console.log('debug:click:yardline');
-					gamedata.yardline = parseInt(items[1]);
+					scope.$apply(function() {
+						gamedata.yardline = parseInt(items[1]);
+					});
 				}
 				else
 				if(items[0] == 'g') {
-					gamedata.togo = parseInt(items[1]);
+					scope.$apply(function() {
+						gamedata.togo = parseInt(items[1]);
+					});
 				}
 				else
 				if(items[0] == 't') {
-					gamedata.time = parseInt(items[1]);
+					scope.$apply(function() {
+						gamedata.time = parseInt(items[1]);
+					});
 				}
 				else
 				if(items[0] == 'o') {
-					// console.log('debug.offense: ' + items[1]);
-					if(items[1] == 'h' || items[1] == 'h.') {
-						// console.log('debug: offense: home')
-						gamedata.offense = 0;
-						gamedata.defense = 1;
-					}
-					else {
-						// console.log('debug: offense: visitor')
-						gamedata.offense = 1;
-						gamedata.defense = 0;                   
-					}
-					gamedata.trigger++;
+					scope.$apply(function() {
+						// console.log('debug.offense: ' + items[1]);
+						if(items[1] == 'h' || items[1] == 'h.') {
+							// console.log('debug: offense: home')
+							gamedata.offense = 0;
+							gamedata.defense = 1;
+						}
+						else {
+							// console.log('debug: offense: visitor')
+							gamedata.offense = 1;
+							gamedata.defense = 0;                   
+						}
+						gamedata.trigger++;
+					});
 				}
 			}
         }
