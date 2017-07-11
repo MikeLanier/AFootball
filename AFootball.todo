@@ -16,13 +16,15 @@ AFootball:
 			✔ change the data using debug commands and make sure the watch's are hit @done (7/10/2017, 8:12:55 PM)
 			✔ make sure the scoreboard updates @done (7/10/2017, 8:12:57 PM)
 		☐ when either the home or visitor name control is clicked, open the team select side panel and tell the controller to load the selected team
+		✔ change the background color of the quarter header to white or yellow depending on which quarter it is and automatically change when quarter changes @done (7/11/2017, 12:10:19 PM)
+		✔ change the background color of the home and visitor team name to white or yellow depending on which is on offense and automatically change when offense changes @done (7/11/2017, 12:10:18 PM)
 	field:
 		☐ find a way to get the current size of the field panel and center the field
 		☐ find a way to detect that the size of the field panel has changes and redraw/recreate the field if there is a need to go to a smaller/larger scale. Applying a scale transformation would not look too good.
 		✔ functions for re-drawing the line of scrimmage, line to make and ball markers. @done (7/11/2017, 9:29:47 AM)
-		☐ add watchers to update the line of scrimmage, line to make and ball markers when something appropriate changes in the gamedata
+		✔ add watchers to update the line of scrimmage, line to make and ball markers when something appropriate changes in the gamedata @done (7/11/2017, 12:10:32 PM)
 			✔ when yardline changes @done (7/11/2017, 9:30:20 AM)
-			☐ when offensive team changes
+			✔ when offensive team changes @done (7/11/2017, 12:09:02 PM)
 		☐ add watchers to draw a result icon when a new result is defined by a debug command
 		drives:
 			☐ create code for the drives display
@@ -48,3 +50,39 @@ AFootball:
 	running a play:
 		☐ get a result from either the debug result stack or the team data
 		☐ parse and react to the result
+
+debug commands:
+	d
+	g
+	o
+	q
+	s
+	t
+	y
+
+a
+b
+c
+-d
+e
+f
+-g
+h
+i
+j
+k
+l
+m
+n
+-o
+p
+-q
+r
+-s
+-t
+u
+v
+w
+x
+-y
+z
