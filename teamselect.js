@@ -285,6 +285,11 @@ angular.module("AFootball")
 			// 	});
 			// });
 			scope.what = SEC;
+			console.log("what.length: " + scope.what.teams.length);
+			for(var i=0; i<scope.what.teams.length; i++)
+			{
+				console.log(scope.what.teams[i].key);
+			}
 
 			scope.closeNav = function() {
 				console.log("closeNav");

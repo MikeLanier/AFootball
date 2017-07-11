@@ -4,7 +4,7 @@ angular.module("AFootball")
 			scope: { gamedata: '=' },
 			templateUrl: "field.html",
 			link: function(scope, elem, attrs) {
-				console.log("field: link");
+				// console.log("field: link");
 
 				var width = '360px';
 				var height = '150px';
@@ -25,12 +25,12 @@ angular.module("AFootball")
 				// compute the scaled height, width and border
 				var w = iwidth * scale;
 				var h = iheight * scale;
-				console.log("field.js: one");
+				// console.log("field.js: one");
 				width = w.toString() + 'px';
 				height = h.toString() + 'px';
 				border = scale.toString() + "px solid white";
 
-				console.log("field.js: two");
+				// console.log("field.js: two");
 				var hashsize = 10;
 				var hashtop = [ 0, 0, 0, 0 ];
 				hashtop[0] = imargin;
@@ -240,10 +240,10 @@ angular.module("AFootball")
 				xx[3] = 0;
 				yy[3] = ball_height / 2;
 
-				console.log('[0]: ' + xx[0].toString() + ', ' + yy[0].toString());
-				console.log('[1]: ' + xx[1].toString() + ', ' + yy[1].toString());
-				console.log('[2]: ' + xx[2].toString() + ', ' + yy[2].toString());
-				console.log('[3]: ' + xx[3].toString() + ', ' + yy[3].toString());
+				// console.log('[0]: ' + xx[0].toString() + ', ' + yy[0].toString());
+				// console.log('[1]: ' + xx[1].toString() + ', ' + yy[1].toString());
+				// console.log('[2]: ' + xx[2].toString() + ', ' + yy[2].toString());
+				// console.log('[3]: ' + xx[3].toString() + ', ' + yy[3].toString());
 
 				var path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
 				path.setAttribute('d',	"M" + xx[0].toString() + " " + yy[0].toString() + " " +
@@ -263,7 +263,7 @@ angular.module("AFootball")
 					},
 
 					function(newValue, oldValue) {
-						console.log("field: scope.gamedata.yardline: has changed");
+						// console.log("field: scope.gamedata.yardline: has changed");
 						scope.drawLineOfScrimmage(imargin, scale, scope.gamedata, ball_width, ball, lineofscrimmage);
 						scope.drawLineToMake(imargin, scale, scope.gamedata, linetomake);
 					},
@@ -297,37 +297,37 @@ angular.module("AFootball")
 				// );
 
 				scope.drawLineOfScrimmage = function(imargin, scale, gamedata, ball_width, ball, lineofscrimmage) {
-					console.log("field: drawLineOfScrimmage: one")
+					// console.log("field: drawLineOfScrimmage: one")
 					var x = imargin + 30 * scale;
-					console.log("field: imargin, scale: " + imargin + ", " + scale)
-					console.log("field: drawLineOfScrimmage: two: x: " + x)
+					// console.log("field: imargin, scale: " + imargin + ", " + scale)
+					// console.log("field: drawLineOfScrimmage: two: x: " + x)
 					if(this.gamedata.offense == 0) {
-						console.log("field: drawLineOfScrimmage: three")
+						// console.log("field: drawLineOfScrimmage: three")
 						x = x + (100 - gamedata.yardline) * scale * 3;
-						console.log("field: drawLineOfScrimmage: four: x: " + x + ", " + ball_width);
+						// console.log("field: drawLineOfScrimmage: four: x: " + x + ", " + ball_width);
 						var x2 = x - ball_width;
-						console.log("field: drawLineOfScrimmage: five: x2: " + x2)
+						// console.log("field: drawLineOfScrimmage: five: x2: " + x2)
 						ball.style.transform = 'rotate(180deg)';
-						console.log("field: drawLineOfScrimmage: six")
+						// console.log("field: drawLineOfScrimmage: six")
 						ball.style.left = x2.toString() + 'px';
-						console.log("field: drawLineOfScrimmage: seven")
+						// console.log("field: drawLineOfScrimmage: seven")
 					}
 					else {
-						console.log("field: drawLineOfScrimmage: eight")
+						// console.log("field: drawLineOfScrimmage: eight")
 						x = x + (gamedata.yardline) * scale * 3;
-						console.log("field: drawLineOfScrimmage: nine: x: " + x)
+						// console.log("field: drawLineOfScrimmage: nine: x: " + x)
 						ball.style.transform = 'rotate(0deg)';
-						console.log("field: drawLineOfScrimmage: ten")
+						// console.log("field: drawLineOfScrimmage: ten")
 						ball.style.left = x.toString() + 'px';
-						console.log("field: drawLineOfScrimmage: eleven")
+						// console.log("field: drawLineOfScrimmage: eleven")
 					}
-					console.log("field: drawLineOfScrimmage: twelve")
+					// console.log("field: drawLineOfScrimmage: twelve")
 					lineofscrimmage.style.left = x.toString() + 'px';
-					console.log("field: drawLineOfScrimmage: thirteen")
+					// console.log("field: drawLineOfScrimmage: thirteen")
 				}
 
 				scope.drawLineToMake = function(imargin, scale, gamedata, linetomake) {
-					console.log("field: drawLineToMake")
+					// console.log("field: drawLineToMake")
 					var ltm = gamedata.yardline - gamedata.togo;
 					var x = imargin + 30 * scale;
 					if(gamedata.offense == 0) {

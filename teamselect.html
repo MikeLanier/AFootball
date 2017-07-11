@@ -1,11 +1,15 @@
+<script src="teamselectitem.js"></script>
+
 <div class="border">
     <div id="mySidenav" class="sidenav">
         <div class="closebtn" ng-click="closeNav()"><img src="./assets/CANCEL_CLOSE.bmp"></img></div>
 		<div class="title">{{what.title}}</div>
 
         <ul id="example-1">
-            <li ng-repeat="item in junk.teams track by item.key" style="list-style: none">
+            <li ng-repeat="item in what.teams" style="list-style: none">
 				{{item.key}}
+				<teamselectitem team="item">
+				</teamselectitem>
 				<!--<v-team-select-item :team="item" @loadteam="loadteam">
 				</v-team-select-item>					-->
             </li>
@@ -55,6 +59,14 @@
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
+}
+
+.sidenav .title {
+	font-size:48px;
+	margin:10px;
+	font-family: Impact;
+	text-shadow: 5px 5px 10px #222222;
+	/*text-shadow: 0 0 10px #0000ff;*/
 }
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
