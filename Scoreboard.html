@@ -3,16 +3,16 @@
         <tr>
             <th class="name-header"></th>
             <th class="item-header"></th>
-            <th :style="{'background-color': quarter1background}" class="item-header black-border white-background">1</th>
-            <th :style="{'background-color': quarter2background}" class="item-header black-border white-background">2</th>
-            <th :style="{'background-color': quarter3background}" class="item-header black-border white-background">3</th>
-            <th :style="{'background-color': quarter4background}" class="item-header black-border white-background">4</th>
+            <th :style="{'background-color': quarter1background}" class="item-header black-border white-background" id="quarter1header">1</th>
+            <th :style="{'background-color': quarter2background}" class="item-header black-border white-background" id="quarter2header">2</th>
+            <th :style="{'background-color': quarter3background}" class="item-header black-border white-background" id="quarter3header">3</th>
+            <th :style="{'background-color': quarter4background}" class="item-header black-border white-background" id="quarter4header">4</th>
             <th class="item-header-ball-on"></th>
             <th class="item-header-time black-border white-background">Time</th>
             <th class="item-header black-border white-background">TO</th>
         </tr>
         <tr>
-            <th @click="hometeamselect" :style="{'background-color': homebackground}" class="name black-border white-background">{{gamedata.name[0]}}</th>
+            <th @click="hometeamselect" :style="{'background-color': homebackground}" class="name black-border white-background" id="homename">{{gamedata.name[0]}}</th>
             <th class="item black-border white-background">{{gamedata.score[0][0]}}</th>
             <th class="item black-border white-background">{{gamedata.score[0][1]}}</th>
             <th class="item black-border white-background">{{gamedata.score[0][2]}}</th>
@@ -23,7 +23,7 @@
             <th class="item black-border white-background">{{gamedata.to[0]}}</th>
         </tr>
         <tr>
-            <th @click="visitorteamselect" :style="{'background-color': visitorbackground}"class="name black-border white-background">{{gamedata.name[1]}}</th>
+            <th @click="visitorteamselect" :style="{'background-color': visitorbackground}"class="name black-border white-background" id="visitorname">{{gamedata.name[1]}}</th>
             <th class="item black-border white-background">{{gamedata.score[1][0]}}</th>
             <th class="item black-border white-background">{{gamedata.score[1][1]}}</th>
             <th class="item black-border white-background">{{gamedata.score[1][2]}}</th>

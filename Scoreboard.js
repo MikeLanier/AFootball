@@ -77,6 +77,58 @@ angular.module("AFootball")
 					true
 				);
 
+				scope.$watch(
+					function() {
+						return scope.gamedata.quarter;
+					},
+
+					function(newValue, oldValue) {
+						console.log('scoreboard: scope.game.quarter: has changed: ' + scope.gamedata.quarter);
+
+						if(scope.gamedata.quarter === 1) {
+							document.getElementById('quarter1header').style.backgroundColor = "yellow";
+							document.getElementById('quarter2header').style.backgroundColor = "white";
+							document.getElementById('quarter3header').style.backgroundColor = "white";
+							document.getElementById('quarter4header').style.backgroundColor = "white";
+						} else 
+						if(scope.gamedata.quarter === 2) {
+							document.getElementById('quarter1header').style.backgroundColor = "white";
+							document.getElementById('quarter2header').style.backgroundColor = "yellow";
+							document.getElementById('quarter3header').style.backgroundColor = "white";
+							document.getElementById('quarter4header').style.backgroundColor = "white";
+						} else 
+						if(scope.gamedata.quarter === 3) {
+							document.getElementById('quarter1header').style.backgroundColor = "white";
+							document.getElementById('quarter2header').style.backgroundColor = "white";
+							document.getElementById('quarter3header').style.backgroundColor = "yellow";
+							document.getElementById('quarter4header').style.backgroundColor = "white";
+						} else 
+						if(scope.gamedata.quarter === 4) {
+							document.getElementById('quarter1header').style.backgroundColor = "white";
+							document.getElementById('quarter2header').style.backgroundColor = "white";
+							document.getElementById('quarter3header').style.backgroundColor = "white";
+							document.getElementById('quarter4header').style.backgroundColor = "yellow";
+						}
+					},
+					true
+				);
+
+				scope.$watch(
+					function() {
+						return scope.gamedata.offense;
+					},
+
+					function(newValue, oldValue) {
+						if(scope.gamedata.offense === 0) {
+							document.getElementById('homename').style.backgroundColor = 'yellow';
+							document.getElementById('visitorname').style.backgroundColor = 'white';
+						} else {
+							document.getElementById('homename').style.backgroundColor = 'white';
+							document.getElementById('visitorname').style.backgroundColor = 'yellow';
+						}
+					}
+				);
+
 				scope.formatDownDistance = function(gamedata) {
 					console.log("formatDownDistance: " + gamedata.down + ", " + gamedata.togo);
 					if(gamedata.down == 1) { scope.down = '1st and ' }

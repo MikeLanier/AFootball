@@ -270,6 +270,17 @@ angular.module("AFootball")
 					true
 				);
 
+				scope.$watch(
+					function() {
+						return scope.gamedata.offense;
+					},
+
+					function(newValue, oldValue) {
+						scope.drawLineOfScrimmage(imargin, scale, scope.gamedata, ball_width, ball, lineofscrimmage);
+						scope.drawLineToMake(imargin, scale, scope.gamedata, linetomake);
+					}
+				);
+
 				// scope.$watch(
 				// 	// This is the important part
 				// 	function() {

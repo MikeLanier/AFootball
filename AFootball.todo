@@ -19,8 +19,10 @@ AFootball:
 	field:
 		☐ find a way to get the current size of the field panel and center the field
 		☐ find a way to detect that the size of the field panel has changes and redraw/recreate the field if there is a need to go to a smaller/larger scale. Applying a scale transformation would not look too good.
-		☐ functions for re-drawing the line of scrimmage, line to make and ball markers.
+		✔ functions for re-drawing the line of scrimmage, line to make and ball markers. @done (7/11/2017, 9:29:47 AM)
 		☐ add watchers to update the line of scrimmage, line to make and ball markers when something appropriate changes in the gamedata
+			✔ when yardline changes @done (7/11/2017, 9:30:20 AM)
+			☐ when offensive team changes
 		☐ add watchers to draw a result icon when a new result is defined by a debug command
 		drives:
 			☐ create code for the drives display

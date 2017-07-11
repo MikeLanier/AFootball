@@ -7,9 +7,9 @@ angular.module("AFootball")
 			scope.message = "";
             elem.bind('keyup', function(event) {
 
-				console.log("keyup: " + scope.message);
+				// console.log("keyup: " + scope.message);
                 if (event.keyCode === 190) {
-					console.log("checkKey: period")
+					// console.log("checkKey: period")
 	                // this.message = this.message.substr(0,i);
 	                // this.click();
 					scope.parse(scope.message, scope.gamedata);
@@ -19,18 +19,18 @@ angular.module("AFootball")
 
 		   scope.parse = function(message, gamedata) {
 				var items = message.split(',');
-				console.log("debug: click: " + message);
-				console.log("debug: items: " + items.length);
-				console.log("debug: items[0]: " + items[0]);
-				console.log("debug: items[1]: " + items[1]);
+				// console.log("debug: click: " + message);
+				// console.log("debug: items: " + items.length);
+				// console.log("debug: items[0]: " + items[0]);
+				// console.log("debug: items[1]: " + items[1]);
 				document.getElementById('junk').focus();
 
 				if(items[0] === 'd') {
-					console.log('debug: down: ' + items[1]);
+					// console.log('debug: down: ' + items[1]);
 					scope.$apply(function() {
 						gamedata.down = parseInt(items[1]);
 					});
-					console.log('debug: down: ' + items[1] + ", " + gamedata.down);
+					// console.log('debug: down: ' + items[1] + ", " + gamedata.down);
 				}
 				else
 				if(items[0] == 's') {
@@ -60,7 +60,7 @@ angular.module("AFootball")
 				}
 				else
 				if(items[0] == 'y') {
-					console.log('debug:click:yardline');
+					// console.log('debug:click:yardline');
 					scope.$apply(function() {
 						gamedata.yardline = parseInt(items[1]);
 					});
