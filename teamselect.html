@@ -1,12 +1,15 @@
 <div class="border">
-	<div id="mySidenav" class="sidenav">
-		<!--<a href="javascript:void(0)" class="closebtn" ng-click="closeNav()">close</a>-->
-		<a class="closebtn" ng-click="closeNav()">close</a>
-		<a href="#">zAbout</a>
-		<a href="#">zServices</a>
-		<a href="#">zClients</a>
-		<a href="#">zContact</a>
-	</div>
+    <div id="mySidenav" class="sidenav">
+        <div class="closebtn" @click="closeNav"><img src="/src/assets/CANCEL_CLOSE.bmp"></img></div>
+		<div class="title">{{junk.name}}</div>
+
+        <ul id="example-1">
+            <li v-for="item in junk.teams" :key="item.id" style="list-style: none">
+				<v-team-select-item :team="item" @loadteam="loadteam">
+				</v-team-select-item>					
+            </li>
+        </ul>
+    </div>
 </div>
 
 <style>

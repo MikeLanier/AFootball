@@ -1,0 +1,32 @@
+export var BCS = {
+	name:  'BCS',
+	teams: [
+		{ name: "Tennessee",     year: "1996", tag: "Tennessee_1996",     helmet: "Tennessee.png" },
+		{ name: "Florida State", year: "1999", tag: "Florida_State_1999", helmet: "Florida_St.png" },
+		{ name: "Virginia Tech", year: "1999", tag: "Virginia_Tech_1999", helmet: "Virginia_Tech.png" },
+		{ name: "Oklahoma",      year: "2000", tag: "Oklahoma_2000",      helmet: "Oklahoma.png" },
+		{ name: "Miami",         year: "2001", tag: "Miami_2001",         helmet: "Miami_FL.png" },
+		{ name: "%Miami",        year: "2002", tag: "Miami_2002",         helmet: "Miami_FL.png" },
+		{ name: "Ohio State",    year: "2002", tag: "Ohio_State_2002",    helmet: "Ohio_St.png" },
+		{ name: "%Ohio State",   year: "2002", tag: "Ohio_State1_2002",   helmet: "Ohio_St.png" },
+		{ name: "%LSU",          year: "2003", tag: "LSU_2003",           helmet: "LSU.png" },
+		{ name: "%Oklahoma",     year: "2004", tag: "Oklahoma_2004",      helmet: "Oklahoma.png" },
+		{ name: "USC",           year: "2004", tag: "USC_2004",           helmet: "Southern_California.png" },
+		{ name: "%USC",          year: "2004", tag: "USC1_2004",          helmet: "Southern_California.png" },
+		{ name: "Texas",         year: "2005", tag: "Texas_2005",         helmet: "Texas.png" },
+		{ name: "%USC",          year: "2005", tag: "USC_2005",           helmet: "Southern_California.png" },
+		{ name: "%Florida",      year: "2006", tag: "Florida_2006",       helmet: "Florida.png" },
+		{ name: "%Ohio State",   year: "2006", tag: "Ohio_State_2006",    helmet: "Ohio_St.png" },
+		{ name: "LSU",           year: "2007", tag: "LSU_2007",           helmet: "LSU.png" },
+		{ name: "%Ohio State",   year: "2007", tag: "Ohio_State_2007",    helmet: "Ohio_St.png" },
+		{ name: "Florida",       year: "2008", tag: "Florida_2008",       helmet: "Florida.png" },
+		{ name: "%Florida",      year: "2008", tag: "Florida1_2008",      helmet: "Florida.png" },
+		{ name: "%Oklahoma",     year: "2008", tag: "Oklahoma_2008",      helmet: "Oklahoma.png" },
+		{ name: "%Alabama",      year: "2009", tag: "Alabama_2009",       helmet: "Alabama.png" },
+		{ name: "%Texas",        year: "2009", tag: "Texas_2009",         helmet: "Texas.png" },
+		{ name: "Auburn",        year: "2010", tag: "Auburn_2010",        helmet: "Auburn.png" },
+		{ name: "Oregon",        year: "2010", tag: "Oregon_2010",        helmet: "Oregon.png" },
+		{ name: "Alabama",       year: "2012", tag: "Alabama_2012",       helmet: "Alabama.png" },
+		{ name: "Notre Dame",    year: "2012", tag: "Notre_Dame_2012",    helmet: "Notre_Dame.png" }
+	]
+};
