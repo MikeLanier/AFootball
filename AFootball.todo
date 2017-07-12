@@ -47,6 +47,13 @@ AFootball:
 			☐ build a result item from the result class
 			☐ add that result to the debug result stack
 			☐ make sure the field detects the addition of the new result to the stack and updates the fields
+	team select:
+		✔ slide out that displays the list of teams @done (7/12/2017, 7:25:25 AM)
+		☐ slide out shows when team name on scoreboard is clicked
+		☐ what the list of teams from a text(csv) file, but have yet to figure that out
+		✔ list of teams from hardcoded, in code array @done (7/12/2017, 7:25:31 AM)
+		☐ team item hilite on over
+		☐ loat team on click
 	running a play:
 		☐ get a result from either the debug result stack or the team data
 		☐ parse and react to the result
