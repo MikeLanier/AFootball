@@ -5,8 +5,7 @@
 
         <ul id="example-1">
             <li ng-repeat="item in what.teams" style="list-style: none">
-				<img src="./assets/helmets/{{item.helmet}}">
-				{{item.tag}}
+				<teamselectitem style="display:inline-block" team= "item"></teamselectitem>
             </li>
         </ul>
     </div>

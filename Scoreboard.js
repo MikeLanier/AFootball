@@ -4,9 +4,9 @@ angular.module("AFootball")
 			scope: { gamedata: '=' },
 			templateUrl: "scoreboard.html",
 			link: function(scope, elem, attrs) {
-				console.log("scoreboard: link");
-				console.log(scope.gamedata.name[0]);
-				console.log(scope.gamedata.name[1]);
+				// console.log("scoreboard: link");
+				// console.log(scope.gamedata.name[0]);
+				// console.log(scope.gamedata.name[1]);
 
 				scope.$watch(
 					// This is the important part
@@ -15,7 +15,7 @@ angular.module("AFootball")
 					},
 
 					function(newValue, oldValue) {
-						console.log("scope.gamedata.down: has changed");
+						// console.log("scope.gamedata.down: has changed");
 						scope.formatDownDistance(scope.gamedata);
 						scope.format_ballon(scope.gamedata);
 					},
@@ -29,7 +29,7 @@ angular.module("AFootball")
 					},
 
 					function(newValue, oldValue) {
-						console.log("scope.gamedata.yardline: has changed");
+						// console.log("scope.gamedata.yardline: has changed");
 						scope.formatDownDistance(scope.gamedata);
 						scope.format_ballon(scope.gamedata);
 					},
@@ -43,7 +43,7 @@ angular.module("AFootball")
 					},
 
 					function(newValue, oldValue) {
-						console.log("scope.gamedata.togo: has changed");
+						// console.log("scope.gamedata.togo: has changed");
 						scope.formatDownDistance(scope.gamedata);
 						scope.format_ballon(scope.gamedata);
 					},
@@ -57,11 +57,11 @@ angular.module("AFootball")
 					},
 
 					function(newValue, oldValue) {
-						console.log("scope.gamedata.time: has changed");
+						// console.log("scope.gamedata.time: has changed");
 
 						var min = Math.floor(scope.gamedata.time / 60);
 						var sec = scope.gamedata.time - (min * 60);
-						console.log("   min, sec: " + min.toString() + ", " + sec.toString())
+						// console.log("   min, sec: " + min.toString() + ", " + sec.toString())
 
 						scope.time = min.toString();
 						if(sec < 10)
@@ -83,7 +83,7 @@ angular.module("AFootball")
 					},
 
 					function(newValue, oldValue) {
-						console.log('scoreboard: scope.game.quarter: has changed: ' + scope.gamedata.quarter);
+						// console.log('scoreboard: scope.game.quarter: has changed: ' + scope.gamedata.quarter);
 
 						if(scope.gamedata.quarter === 1) {
 							document.getElementById('quarter1header').style.backgroundColor = "yellow";
@@ -130,7 +130,7 @@ angular.module("AFootball")
 				);
 
 				scope.formatDownDistance = function(gamedata) {
-					console.log("formatDownDistance: " + gamedata.down + ", " + gamedata.togo);
+					// console.log("formatDownDistance: " + gamedata.down + ", " + gamedata.togo);
 					if(gamedata.down == 1) { scope.down = '1st and ' }
 					else if(gamedata.down == 2)    {scope.down = '2nd and '}
 					else if(gamedata.down == 3)    {scope.down = '3rd and '}
