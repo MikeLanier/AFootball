@@ -7,9 +7,9 @@ angular.module("AFootball")
 			scope.message = "";
             elem.bind('keyup', function(event) {
 
-				console.log("keyup: " + scope.message);
+				// console.log("keyup: " + scope.message);
                 if (event.keyCode === 190) {
-					console.log("checkKey: period")
+					// console.log("checkKey: period")
 	                // scope.message = scope.message.substr(0,i);
 	                // this.click();
 					scope.parse(scope.message, scope.gamedata);
@@ -79,7 +79,7 @@ angular.module("AFootball")
 				}
 				else
 				if(items[0] == 'z.') {
-					console.log("open panel")
+					// console.log("open panel")
 			        document.getElementById("mySidenav").style.width = "300px";
 				}
 				else

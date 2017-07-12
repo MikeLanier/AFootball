@@ -8,6 +8,14 @@ angular.module("AFootball")
 				// console.log(scope.gamedata.name[0]);
 				// console.log(scope.gamedata.name[1]);
 
+				scope.hometeamselect = function() {
+			        document.getElementById("mySidenav").style.width = "300px";
+				};
+
+				scope.visitorteamselect = function() {
+			        document.getElementById("mySidenav").style.width = "300px";
+				};
+				
 				scope.$watch(
 					// This is the important part
 					function() {

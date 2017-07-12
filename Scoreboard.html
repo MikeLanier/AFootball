@@ -12,7 +12,7 @@
             <th class="item-header border white-background">TO</th>
         </tr>
         <tr>
-            <th @click="hometeamselect" :style="{'background-color': homebackground}" class="name border white-background" id="homename">{{gamedata.name[0]}}</th>
+            <th ng-click="hometeamselect()" :style="{'background-color': homebackground}" class="name border white-background" id="homename">{{gamedata.name[0]}}</th>
             <th class="item border white-background">{{gamedata.score[0][0]}}</th>
             <th class="item border white-background">{{gamedata.score[0][1]}}</th>
             <th class="item border white-background">{{gamedata.score[0][2]}}</th>
@@ -23,7 +23,7 @@
             <th class="item border white-background">{{gamedata.to[0]}}</th>
         </tr>
         <tr>
-            <th @click="visitorteamselect" :style="{'background-color': visitorbackground}"class="name border white-background" id="visitorname">{{gamedata.name[1]}}</th>
+            <th ng-click="visitorteamselect()" :style="{'background-color': visitorbackground}"class="name border white-background" id="visitorname">{{gamedata.name[1]}}</th>
             <th class="item border white-background">{{gamedata.score[1][0]}}</th>
             <th class="item border white-background">{{gamedata.score[1][1]}}</th>
             <th class="item border white-background">{{gamedata.score[1][2]}}</th>

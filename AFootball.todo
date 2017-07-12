@@ -15,7 +15,7 @@ AFootball:
 			✔ create the watch functions @done (7/10/2017, 10:32:17 AM)
 			✔ change the data using debug commands and make sure the watch's are hit @done (7/10/2017, 8:12:55 PM)
 			✔ make sure the scoreboard updates @done (7/10/2017, 8:12:57 PM)
-		☐ when either the home or visitor name control is clicked, open the team select side panel and tell the controller to load the selected team
+		✔ when either the home or visitor name control is clicked, open the team select side panel and tell the controller to load the selected team @done (7/12/2017, 8:18:07 AM)
 		✔ change the background color of the quarter header to white or yellow depending on which quarter it is and automatically change when quarter changes @done (7/11/2017, 12:10:19 PM)
 		✔ change the background color of the home and visitor team name to white or yellow depending on which is on offense and automatically change when offense changes @done (7/11/2017, 12:10:18 PM)
 	field:
