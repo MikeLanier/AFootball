@@ -6,8 +6,6 @@ angular.module("AFootball")
 		},
 		templateUrl: "teamselectitem.html",
         link: function(scope, elem, attrs) {
-			// console.log("teamselectitem: team.name: " + scope.team.name);
-
 			scope.closeNav = function() {
 				console.log("closeNav");
 		        document.getElementById("mySidenav").style.width = "0px";
