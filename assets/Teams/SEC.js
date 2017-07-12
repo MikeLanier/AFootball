@@ -1,5 +1,5 @@
-export var SEC = {
-	name: 'SEC',
+var SEC = {
+	title: 'SEC',
 	teams: [
 		{ name: "Alabama",        year: "2012", tag: "Alabama_2012",        helmet: "Alabama.png" },
 		{ name: "Arkansas",       year: "1977", tag: "Arkansas_1977",       helmet: "Arkansas.png" },

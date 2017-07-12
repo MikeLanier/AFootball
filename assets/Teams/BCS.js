@@ -1,5 +1,5 @@
-export var BCS = {
-	name:  'BCS',
+var BCS = {
+	title: 'BCS',
 	teams: [
 		{ name: "Tennessee",     year: "1996", tag: "Tennessee_1996",     helmet: "Tennessee.png" },
 		{ name: "Florida State", year: "1999", tag: "Florida_State_1999", helmet: "Florida_St.png" },

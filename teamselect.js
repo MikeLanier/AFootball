@@ -1,7 +1,6 @@
-// import {BCS} from "./assets/Teams/BCS"
-// import {SEC} from "./assets/Teams/SEC.js"
-// import {Teams} from "./assets/Teams/Teams.js"
-
+document.write("<script type='text/javascript' src='./assets/Teams/SEC.js'> <\/script>");
+document.write("<script type='text/javascript' src='./assets/Teams/BCS.js'> <\/script>");
+document.write("<script type='text/javascript' src='./assets/Teams/Teams.js'> <\/script>");
 // // import {Air_Force_1985} from "./assets/Teams/CSV/Air Force_1985.js";
 // // import {Alabama_1978} from "./assets/Teams/CSV/Alabama_1978.js";
 // // import {Alabama_1979} from "./assets/Teams/CSV/Alabama_1979.js";
@@ -127,50 +126,6 @@
 // // import {Wisconsin_1993} from "./assets/Teams/CSV/Wisconsin_1993.js";
 // // import {Wyoming_1967} from "./assets/Teams/CSV/Wyoming_1967.js";
 
-var Alabama_2012 = {};
-var Auburn_2010 = {};
-var Florida_2008 = {};
-var Georgia_1980 = {};
-var Kentucky_1977 = {};
-var LSU_2007 = {};
-var Mississippi_2003 = {};
-var Missouri_1969 = {};
-var South_Carolina_1984 = {};
-var Tennessee_1998 = {};
-
-var BCS = {	
-	title: "BCS",
-	teams: [
-		{ name: "Tennessee",     year: "1996", tag: "Tennessee_1996",     helmet: "Tennessee.png" },
-		{ name: "Florida State", year: "1999", tag: "Florida_State_1999", helmet: "Florida_St.png" },
-		{ name: "Virginia Tech", year: "1999", tag: "Virginia_Tech_1999", helmet: "Virginia_Tech.png" },
-		{ name: "Oklahoma",      year: "2000", tag: "Oklahoma_2000",      helmet: "Oklahoma.png" },
-		{ name: "Miami",         year: "2001", tag: "Miami_2001",         helmet: "Miami_FL.png" },
-		{ name: "%Miami",        year: "2002", tag: "Miami_2002",         helmet: "Miami_FL.png" },
-		{ name: "Ohio State",    year: "2002", tag: "Ohio_State_2002",    helmet: "Ohio_St.png" },
-		{ name: "%Ohio State",   year: "2002", tag: "Ohio_State1_2002",   helmet: "Ohio_St.png" },
-		{ name: "%LSU",          year: "2003", tag: "LSU_2003",           helmet: "LSU.png" },
-		{ name: "%Oklahoma",     year: "2004", tag: "Oklahoma_2004",      helmet: "Oklahoma.png" },
-		{ name: "USC",           year: "2004", tag: "USC_2004",           helmet: "Southern_California.png" },
-		{ name: "%USC",          year: "2004", tag: "USC1_2004",          helmet: "Southern_California.png" },
-		{ name: "Texas",         year: "2005", tag: "Texas_2005",         helmet: "Texas.png" },
-		{ name: "%USC",          year: "2005", tag: "USC_2005",           helmet: "Southern_California.png" },
-		{ name: "%Florida",      year: "2006", tag: "Florida_2006",       helmet: "Florida.png" },
-		{ name: "%Ohio State",   year: "2006", tag: "Ohio_State_2006",    helmet: "Ohio_St.png" },
-		{ name: "LSU",           year: "2007", tag: "LSU_2007",           helmet: "LSU.png" },
-		{ name: "%Ohio State",   year: "2007", tag: "Ohio_State_2007",    helmet: "Ohio_St.png" },
-		{ name: "Florida",       year: "2008", tag: "Florida_2008",       helmet: "Florida.png" },
-		{ name: "%Florida",      year: "2008", tag: "Florida1_2008",      helmet: "Florida.png" },
-		{ name: "%Oklahoma",     year: "2008", tag: "Oklahoma_2008",      helmet: "Oklahoma.png" },
-		{ name: "%Alabama",      year: "2009", tag: "Alabama_2009",       helmet: "Alabama.png" },
-		{ name: "%Texas",        year: "2009", tag: "Texas_2009",         helmet: "Texas.png" },
-		{ name: "Auburn",        year: "2010", tag: "Auburn_2010",        helmet: "Auburn.png" },
-		{ name: "Oregon",        year: "2010", tag: "Oregon_2010",        helmet: "Oregon.png" },
-		{ name: "Alabama",       year: "2012", tag: "Alabama_2012",       helmet: "Alabama.png" },
-		{ name: "Notre Dame",    year: "2012", tag: "Notre_Dame_2012",    helmet: "Notre_Dame.png" }
-	]
-};
-
 angular.module("AFootball")
 	.directive('teamselect', function() {
     return {
@@ -178,7 +133,20 @@ angular.module("AFootball")
         link: function(scope, elem, attrs) {
 			// console.log("what.length: " + scope.what.teams.length);
 
-			scope.what = BCS;
+			scope.what = SEC;
+			console.log(scope.what.title);
+			for(var i=0; i<scope.what.teams.length; i++)
+			{
+				console.log(scope.what.teams[i].tag);
+			}
+			// scope.what = BCS;
+			// console.log(scope.what.title);
+			// for(var i=0; i<scope.what.teams.length; i++)
+			// {
+			// 	console.log(scope.what.teams[i].tag);
+			// }
+			// scope.what = Teams;
+			// console.log(scope.what.title);
 			// for(var i=0; i<scope.what.teams.length; i++)
 			// {
 			// 	console.log(scope.what.teams[i].tag);
