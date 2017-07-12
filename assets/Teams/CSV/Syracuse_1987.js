@@ -1,4 +1,4 @@
-export var Syracuse_1987 = {
+ var Syracuse_1987 = {
 	name: 'Syracuse_1987',
 	stuff: [
 		"1987,Syracuse,Orangemen,30,,,,,,,,,,,,,",

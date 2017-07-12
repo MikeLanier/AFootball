@@ -1,4 +1,4 @@
-export var Penn_State_1969 = {
+ var Penn_State_1969 = {
 	name: 'Penn_State_1969',
 	stuff: [
 		"1969,Penn State,Nittany Lions,33,,,,,,,,,,,,,",

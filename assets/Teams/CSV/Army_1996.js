@@ -1,4 +1,4 @@
-export var Army_1996 = {
+ var Army_1996 = {
 	name: 'Army_1996',
 	stuff: [
 		"1996,Army,Cadets,30,,,,,,,,,,,,,",

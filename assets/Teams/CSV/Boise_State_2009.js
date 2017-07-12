@@ -1,4 +1,4 @@
-export var Boise_State_2009 = {
+ var Boise_State_2009 = {
 	name: 'Boise_State_2009',
 	stuff: [
 		"2009,Boise State,Mustangs,29,,,,,,,,,,,,,",

@@ -1,4 +1,4 @@
-export var USC_2004 = {
+ var USC_2004 = {
 	name: 'USC_2004',
 	stuff: [
 		"2004,USC,Trojans,29,,,,,,,,,,,,,",

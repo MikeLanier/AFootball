@@ -1,4 +1,4 @@
-export var Arkansas_1977 = {
+ var Arkansas_1977 = {
 	name: 'Arkansas_1977',
 	stuff: [
 		"1977,Arkansas,Razorbacks,26,4264141,16777215,c:\Mike\Football\Helmets\Arkansas.bmp,ARK,1,",

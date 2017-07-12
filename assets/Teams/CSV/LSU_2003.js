@@ -1,4 +1,4 @@
-export var LSU_2003 = {
+ var LSU_2003 = {
 	name: 'LSU_2003',
 	stuff: [
 		"2003,LSU,Tigers,30,8071475,2603261,c:\Mike\Football\Helmets\LSU.bmp,LSU,1,",

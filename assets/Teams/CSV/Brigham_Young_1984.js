@@ -1,4 +1,4 @@
-export var Brigham_Young_1984 = {
+ var Brigham_Young_1984 = {
 	name: 'Brigham_Young_1984',
 	stuff: [
 		"1984,Brigham Young,Cougars,28,,,,,,,,,,,,,",

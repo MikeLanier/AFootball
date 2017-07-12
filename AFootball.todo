@@ -52,8 +52,8 @@ AFootball:
 		☐ slide out shows when team name on scoreboard is clicked
 		☐ what the list of teams from a text(csv) file, but have yet to figure that out
 		✔ list of teams from hardcoded, in code array @done (7/12/2017, 7:25:31 AM)
-		☐ team item hilite on over
-		☐ loat team on click
+		✔ team item hilite on over @done (7/12/2017, 5:14:48 PM)
+		☐ load team on click
 	running a play:
 		☐ get a result from either the debug result stack or the team data
 		☐ parse and react to the result

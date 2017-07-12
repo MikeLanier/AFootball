@@ -1,4 +1,4 @@
-export var Pittsburgh_1981 = {
+ var Pittsburgh_1981 = {
 	name: 'Pittsburgh_1981',
 	stuff: [
 		"1981,Pittsburgh,Panthers,26,,,,,,,,,,,,,",

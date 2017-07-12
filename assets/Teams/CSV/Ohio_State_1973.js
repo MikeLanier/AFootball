@@ -1,4 +1,4 @@
-export var Ohio_State_1973 = {
+ var Ohio_State_1973 = {
 	name: 'Ohio_State_1973',
 	stuff: [
 		"1973,Ohio State,Buckeyes,31,,,,,,,,,,,,,",

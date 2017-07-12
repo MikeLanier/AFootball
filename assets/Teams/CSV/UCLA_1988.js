@@ -1,4 +1,4 @@
-export var UCLA_1988 = {
+ var UCLA_1988 = {
 	name: 'UCLA_1988',
 	stuff: [
 		"1988,UCLA,Bruins,28,,,,,,,,,,,,,",

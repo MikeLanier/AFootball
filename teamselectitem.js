@@ -7,23 +7,25 @@ angular.module("AFootball")
 		templateUrl: "teamselectitem.html",
         link: function(scope, elem, attrs) {
 
-			scope.hoverstyle={'border':'1px solid yellow'};
-
+			scope.border = 'teamselectitem-border-white';
+			
 			scope.closeNav = function() {
-				console.log("closeNav");
+				// console.log("closeNav");
 		        document.getElementById("mySidenav").style.width = "0px";
+			};
+
+			scope.mouseover = function() {
+				scope.border = 'teamselectitem-border-blue';
+				// console.log("mouseover");
+			};
+
+			scope.mouseleave = function() {
+				scope.border = 'teamselectitem-border-white';
+				// console.log("mouseleave");
 			};
 
 			scope.click = function() {
 				console.log("click");
-			};
-
-			scope.mouseover = function() {
-				console.log("mouseover");
-			};
-
-			scope.mouseleave = function() {
-				console.log("mouseleave");
 			};
 		}
     }

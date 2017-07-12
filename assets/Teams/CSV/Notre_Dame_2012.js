@@ -1,4 +1,4 @@
-export var Notre_Dame_2012 = {
+ var Notre_Dame_2012 = {
 	name: 'Notre_Dame_2012',
 	stuff: [
 		"2012,Notre Dame,Fighting Irish,32,3278248,16777215,,ND,1,,,,,,,,",

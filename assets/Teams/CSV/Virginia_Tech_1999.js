@@ -1,4 +1,4 @@
-export var Virginia_Tech_1999 = {
+ var Virginia_Tech_1999 = {
 	name: 'Virginia_Tech_1999',
 	stuff: [
 		"1999,Virginia Tech,Hokies,30,,,,,,,,,,,,,",

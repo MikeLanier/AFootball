@@ -1,4 +1,4 @@
-export var Arizona_State_1996 = {
+ var Arizona_State_1996 = {
 	name: 'Arizona_State_1996',
 	stuff: [
 		"1996,Arizona State,Sun Devils,33,,,,,,,,,,,,,",

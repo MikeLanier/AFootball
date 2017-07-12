@@ -1,4 +1,4 @@
-export var Oklahoma_State_1988 = {
+ var Oklahoma_State_1988 = {
 	name: 'Oklahoma_State_1988',
 	stuff: [
 		"1988,Oklahoma State,Cowboys,33,26111,0,c:\Mike\Football\Helmets\Oklahoma State.bmp,OSU,1,",

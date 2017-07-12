@@ -1,4 +1,4 @@
-export var West_Virginia_1988 = {
+ var West_Virginia_1988 = {
 	name: 'West_Virginia_1988',
 	stuff: [
 		"1988,West Virginia,Mountaineers,29,,,,,,,,,,,,,",

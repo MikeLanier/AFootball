@@ -1,4 +1,4 @@
-export var Florida_State_1999 = {
+ var Florida_State_1999 = {
 	name: 'Florida_State_1999',
 	stuff: [
 		"1999,Florida State,Seminoles,33,,,,,,,,,,,,,",

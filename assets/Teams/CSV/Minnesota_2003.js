@@ -1,4 +1,4 @@
-export var Minnesota_2003 = {
+ var Minnesota_2003 = {
 	name: 'Minnesota_2003',
 	stuff: [
 		"2003,Minnesota,Gophers,28,,,,,,,,,,,,,",

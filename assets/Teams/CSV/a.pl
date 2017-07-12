@@ -15,20 +15,13 @@ require "c:\\mike\\tools\\splitpath.pl";
 
 open( FILEHANDLE, $ARGV[0] );
 
-print "export var ".$ARGV[1]." = {\n";
-print "	name: '".$ARGV[1]."',\n";
-print "	teams: [\n";
-
 while( $line = <FILEHANDLE> )
 {
    chomp $line;
-   print "		\"".$line."\",\n";
+   print "call replace-string-in-file ".$line." \"export\" \"\"\n";
 }
 close( FILEHANDLE );
 
-print "		\"\"\n";
-print "	]\n";
-print "}\n";
 
 __END__
 :endofperl

@@ -1,4 +1,26 @@
-<div class="teamselectitem-border" ng-mouseover="mouseover()" mg-mouseleave="mouseleave()">
+<div ng-class="border" ng-mouseover="mouseover()" ng-mouseleave="mouseleave()" ng-click="click()">
     <div class="teamselectitem-title">{{team.year}}: {{team.name}}</div>
 	<img src="./assets/helmets/{{team.helmet}}">
 </div>
+
+<style>
+.teamselectitem-border-blue {
+	border: 2px solid blue;
+	border-radius: 5px;
+	margin: 5px;
+	min-width: 220px;
+}
+.teamselectitem-border-yellow {
+	border: 2px solid yellow;
+	border-radius: 5px;
+	margin: 5px;
+	min-width: 220px;
+}
+.teamselectitem-border-white {
+	border: 2px solid white;
+	border-radius: 5px;
+	margin: 5px;
+	min-width: 220px;
+}
+
+</style>

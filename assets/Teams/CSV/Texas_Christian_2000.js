@@ -1,4 +1,4 @@
-export var Texas_Christian_2000 = {
+ var Texas_Christian_2000 = {
 	name: 'Texas_Christian_2000',
 	stuff: [
 		"2000,Texas Christian,Horned Frogs,31,,,,,,,,,,,,,",
