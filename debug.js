@@ -80,10 +80,7 @@ angular.module("AFootball")
 				else
 				if(items[0] == 'z.') {
 					console.log("open panel")
-			        document.getElementById("mySidenav").style.width = "250px";
-					scope.$apply(function() {
-						gamedata.trigger = !gamedata.trigger;
-					});
+			        document.getElementById("mySidenav").style.width = "300px";
 				}
 				else
 				if(items[0] == 'o') {

@@ -1,5 +1,3 @@
-<script src="teamselectitem.js"></script>
-
 <div class="border">
     <div id="mySidenav" class="sidenav">
         <div class="closebtn" ng-click="closeNav()"><img src="./assets/CANCEL_CLOSE.bmp"></img></div>
@@ -7,11 +5,8 @@
 
         <ul id="example-1">
             <li ng-repeat="item in what.teams" style="list-style: none">
-				{{item.key}}
-				<teamselectitem team="item">
-				</teamselectitem>
-				<!--<v-team-select-item :team="item" @loadteam="loadteam">
-				</v-team-select-item>					-->
+				<img src="./assets/helmets/{{item.helmet}}">
+				{{item.tag}}
             </li>
         </ul>
     </div>
