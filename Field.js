@@ -11,8 +11,8 @@ angular.module("AFootball")
 				var scale = 3;
 				var iwidth = 360;
 				var iheight = 160;
-				var margin = "10px";
-				var imargin = 10;
+				var margin = "0px";
+				var imargin = 0;
 				var background_color = 'green';
 				var border = "1px solid white";
 				var lineofscrimmage = null;
@@ -45,7 +45,9 @@ angular.module("AFootball")
 
 				// get the field
 				var field = document.getElementById('field');
-				field.style.position = "fixed";
+				field.style.position = "relative";
+				field.style.width = width;
+				field.style.height = height;
 
 				var border = document.createElement('div');
 				border.style.borderTop='medium solid';

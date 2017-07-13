@@ -19,19 +19,31 @@
 
   <body>
 	<div id="frame" ng-controller="AFootballCtrl" class="football" elheightresize>
-		<div class="left-panels">
-			<scoreboard gamedata="gamedata"></scoreboard>
-			<field gamedata="gamedata"></field>
-			<output gamedata="gamedata"></output>
-			<options gamedata="gamedata"></options>
-		<!--</div>
-		<div class="right-panels">-->
-			<stats gamedata="gamedata"></stats>
-			<debug gamedata="gamedata"></debug>
-			<teamselect gamedata="gamedata"></teamselect>
-		</div>
+		<table width="100%" height="100%" bgcolor="lightgray">
+			<tr>
+				<td width="80%" bgcolor="green"><scoreboard gamedata="gamedata"></scoreboard></td>
+				<td width="20%" rowspan="3" bgcolor="green"><stats gamedata="gamedata"></stats></td>
+			</tr>
+			<tr>
+				<td bgcolor="green"><field gamedata="gamedata"></field></td>
+			</tr>
+			<tr>
+				<td bgcolor="green"><output gamedata="gamedata"></output></td>
+			</tr>
+			<tr>
+				<td bgcolor="green"><options gamedata="gamedata"></options></td>
+				<td bgcolor="green"><debug gamedata="gamedata"></debug></td>
+			</tr>
+		</table>
 	</div>
   </body>
 
 </html>
 
+<style>
+table, th, td {
+    border: 1px solid black;
+	border-radius: 5px;
+
+}	
+</style>
