@@ -45,13 +45,9 @@ angular.module("AFootball")
 
 				// get the field
 				var field = document.getElementById('field');
-<<<<<<< HEAD
-				field.style.position = "absolute";
-=======
 				field.style.position = "relative";
 				field.style.width = width;
 				field.style.height = height;
->>>>>>> table-layout
 
 				var border = document.createElement('div');
 				border.style.borderTop='medium solid';
