@@ -45,7 +45,7 @@ angular.module("AFootball")
 
 				// get the field
 				var field = document.getElementById('field');
-				field.style.position = "fixed";
+				field.style.position = "absolute";
 
 				var border = document.createElement('div');
 				border.style.borderTop='medium solid';
