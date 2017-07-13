@@ -1,13 +1,13 @@
-<div class="border">
-    <div id="mySidenav" class="sidenav">
-        <div class="closebtn" ng-click="closeNav()"><img src="./assets/CANCEL_CLOSE.bmp"></img></div>
-		<div class="title">{{what.title}}</div>
+<!--<div class="border">-->
+<div id="mySidenav" class="sidenav border">
+	<div class="closebtn" ng-click="closeNav()"><img src="./assets/CANCEL_CLOSE.bmp"></img></div>
+	<div class="title">{{what.title}}</div>
 
-        <ul id="example-1">
-            <li ng-repeat="item in what.teams" style="list-style: none">
-				<teamselectitem style="display:inline-block" team= "item"></teamselectitem>
-            </li>
-        </ul>
-    </div>
+	<ul id="example-1">
+		<li ng-repeat="item in what.teams" style="list-style: none">
+			<teamselectitem style="display:inline-block" team= "item"></teamselectitem>
+		</li>
+	</ul>
 </div>
+<!--</div>-->
 
