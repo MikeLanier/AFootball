@@ -1,4 +1,5 @@
 AFootball:
+	☐ Want the field to be a fixed size, which means it's table cell will not resize. Change the field scale and orientation based on the size of the frame, which I can watch.
 	contoller:
 		☐ have code to detect that the frame size has changed and what the current size is.  Can I use this to tell the field that it needs to re-draw
 		✔ define the gamedata and pass it to the panels @done (7/10/2017, 10:06:11 AM)

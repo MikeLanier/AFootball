@@ -1,35 +1,48 @@
-<td class="scoreboard border">
-    <table>
-        <tr>
-            <th class="name-header"></th>
-            <th class="item-header"></th>
-            <th :style="{'background-color': quarter1background}" class="item-header border white-background" id="quarter1header">1</th>
-            <th :style="{'background-color': quarter2background}" class="item-header border white-background" id="quarter2header">2</th>
-            <th :style="{'background-color': quarter3background}" class="item-header border white-background" id="quarter3header">3</th>
-            <th :style="{'background-color': quarter4background}" class="item-header border white-background" id="quarter4header">4</th>
-            <th class="item-header-ball-on"></th>
-            <th class="item-header-time border white-background">Time</th>
-            <th class="item-header border white-background">TO</th>
-        </tr>
-        <tr>
-            <th ng-click="hometeamselect()" :style="{'background-color': homebackground}" class="name border white-background" id="homename">{{gamedata.name[0]}}</th>
-            <th class="item border white-background">{{gamedata.score[0][0]}}</th>
-            <th class="item border white-background">{{gamedata.score[0][1]}}</th>
-            <th class="item border white-background">{{gamedata.score[0][2]}}</th>
-            <th class="item border white-background">{{gamedata.score[0][3]}}</th>
-            <th class="item border white-background">{{gamedata.score[0][4]}}</th>
-            <th rowspan="2" class="item border white-background"><div style="margin:5px">{{down}}</div><div style="margin:5px">{{ballon}}</div></th>
-            <th rowspan="2" class="item border white-background">{{time}}</th>
-            <th class="item border white-background">{{gamedata.to[0]}}</th>
-        </tr>
-        <tr>
-            <th ng-click="visitorteamselect()" :style="{'background-color': visitorbackground}"class="name border white-background" id="visitorname">{{gamedata.name[1]}}</th>
-            <th class="item border white-background">{{gamedata.score[1][0]}}</th>
-            <th class="item border white-background">{{gamedata.score[1][1]}}</th>
-            <th class="item border white-background">{{gamedata.score[1][2]}}</th>
-            <th class="item border white-background">{{gamedata.score[1][3]}}</th>
-            <th class="item border white-background">{{gamedata.score[1][4]}}</th>
-            <th class="item border white-background">{{gamedata.to[1]}}</th>
-        </tr>
-    </table>
-</td>
+<table bgcolor="green" style="position:relative">
+	<tr height="30%">
+		<th class="scoreboard-name"></th>
+		<th class="scoreboard-item"></th>
+		<th class="scoreboard-item border white-background" :style="{'background-color': quarter1background}" id="quarter1header">1</th>
+		<th class="scoreboard-item border white-background" :style="{'background-color': quarter2background}" id="quarter2header">2</th>
+		<th class="scoreboard-item border white-background" :style="{'background-color': quarter3background}" id="quarter3header">3</th>
+		<th class="scoreboard-item border white-background" :style="{'background-color': quarter4background}" id="quarter4header">4</th>
+		<th class="scoreboard-item-ball-on"></th>
+		<th class="scoreboard-item-time border white-background">Time</th>
+		<th class="scoreboard-item border white-background">TO</th>
+	</tr>
+	<tr height="35%">
+		<th class="scoreboard-name border white-background" ng-click="hometeamselect()" :style="{'background-color': homebackground}" id="homename">{{gamedata.name[0]}}</th>
+		<th class="scoreboard-item border white-background">{{gamedata.score[0][0]}}</th>
+		<th class="scoreboard-item border white-background">{{gamedata.score[0][1]}}</th>
+		<th class="scoreboard-item border white-background">{{gamedata.score[0][2]}}</th>
+		<th class="scoreboard-item border white-background">{{gamedata.score[0][3]}}</th>
+		<th class="scoreboard-item border white-background">{{gamedata.score[0][4]}}</th>
+		<th rowspan="2" class="item border white-background"><div style="margin:5px">{{down}}</div><div style="margin:5px">{{ballon}}</div></th>
+		<th rowspan="2" class="item border white-background">{{time}}</th>
+		<th class="scoreboard-item border white-background">{{gamedata.to[0]}}</th>
+	</tr>
+	<tr>
+		<th class="scoreboard-name border white-background" ng-click="visitorteamselect()" :style="{'background-color': visitorbackground}" id="visitorname">{{gamedata.name[1]}}</th>
+		<th class="scoreboard-item border white-background">{{gamedata.score[1][0]}}</th>
+		<th class="scoreboard-item border white-background">{{gamedata.score[1][1]}}</th>
+		<th class="scoreboard-item border white-background">{{gamedata.score[1][2]}}</th>
+		<th class="scoreboard-item border white-background">{{gamedata.score[1][3]}}</th>
+		<th class="scoreboard-item border white-background">{{gamedata.score[1][4]}}</th>
+		<th class="scoreboard-item border white-background">{{gamedata.to[1]}}</th>
+	</tr>
+</table>
+
+<style>
+.scoreboard-item-time {
+    width: 5%;
+}
+.scoreboard-item-ball-on {
+    width: 50%;
+}
+.scoreboard-item {
+    width: 2%;
+}
+.scoreboard-name {
+    width: 30%;
+}
+</style>

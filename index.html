@@ -18,22 +18,26 @@
   </head>
 
   <body>
-	<div id="frame" ng-controller="AFootballCtrl" class="football" elheightresize>
-		<teamselect gamedata="gamedata"></teamselect>
-		<table width="100%" height="100%" bgcolor="lightgray">
-			<tr>
-				<td width="80%" bgcolor="green"><scoreboard gamedata="gamedata"></scoreboard></td>
-				<td width="20%" rowspan="3" bgcolor="green"><stats gamedata="gamedata"></stats></td>
+	<div id="frame" ng-controller="AFootballCtrl" elheightresize>
+		<!-- <teamselect gamedata="gamedata"></teamselect> -->
+		<table bgcolor="lightgray">
+			<tr height="10%">
+				 <td width="70%"><scoreboard gamedata="gamedata"></scoreboard></td> 
+				 <td width="29%" rowspan="3" bgcolor="green"><stats gamedata="gamedata"></stats></td> 
 			</tr>
-			<tr>
-				<td bgcolor="green"><field gamedata="gamedata"></field></td>
+			<tr height="40%">
+				<td>
+					<!-- <div class="border" style="width:1090px; height:490px; background-color: green; position:relative"> -->
+						<field gamedata="gamedata"></field>
+					<!-- </div> -->
+				</td> 
 			</tr>
-			<tr>
-				<td bgcolor="green"><output gamedata="gamedata"></output></td>
+			<tr height="20%">
+				 <td><output gamedata="gamedata"></output></td> 
 			</tr>
-			<tr>
-				<td bgcolor="green"><options gamedata="gamedata"></options></td>
-				<td bgcolor="green"><debug gamedata="gamedata"></debug></td>
+			<tr height="20%">
+				 <td><options gamedata="gamedata"></options></td> 
+				 <td bgcolor="green"><debug gamedata="gamedata"></debug></td> 
 			</tr>
 		</table>
 	</div>
@@ -42,12 +46,19 @@
 </html>
 
 <style>
-th, td {
-    border: 1px solid black;
-	border-radius: 5px;
-}	
 table {
-    /*border: 2px solid red;*/
-	border-radius: 5px;
-}	
+	margin: 5px; 
+	border: 2px solid black;
+	border-radius: 5px;   
+	left: 0;
+	top: 0;
+	width: calc(100% - 10px);
+	height: calc(100% - 10px);
+	position: fixed;
+}
+tr, th, td {
+	border: 2px solid black;
+	border-radius: 5px;  
+	background-color: green;	
+}
 </style>

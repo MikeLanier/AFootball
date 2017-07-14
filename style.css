@@ -1,12 +1,11 @@
 /* Styles go here */
 .border {
-	border: 1px solid black;
+	border: 2px solid black;
 	border-radius: 5px;
-	margin: 2px;
 }
 
 /*div {display:inline-block}*/
-.left-panels {
+/* .left-panels {
 	width: 75%;
 	height: 99%;
 }
@@ -46,12 +45,6 @@
 	height: auto;
 	background-color: green;
 }
-.debug {
-	position:relative;
-	width: auto;
-	height: 100%;
-	background-color: Green;
-}
 .football {
 	position: absolute;
 	left: 0px;
@@ -61,27 +54,16 @@
 	border: 1px solid black;
 	background-color: gray;
 	display: inline-block;
-}
-.debug-go-button {
-    border:1px solid black;
-    border-radius:5px;
-    background-color:white;
-    display:inline;
-}
-.debug-ctrl {
-    border:1px solid black;
-    /*border-radius:5px;*/
-    background-color:white;
+}*/
+/* .debug-ctrl { */
+    /* border:1px solid black; */
+    /* border-radius:5px; */
+    /* background-color:white; */
     /*display:inline;*/
-	width:90%;
-}
+	/* width:90%; */
+/* } */
 
-.option-button {
-    height: 25%;
-    width: 200px;
-}
-
-.stat-text-ctrl {
+/* .stat-text-ctrl {
 	background-color: white;
 	margin: 0px;
 	width: auto;
@@ -90,139 +72,125 @@
 
 .no-wrap {
   white-space: nowrap;
-}
+} */
 .white-background {
   background-color: white;
 }
-.item-header {
-    height: 16px;
-    width: 32px;
-}
-.item-header-ball-on {
-    height: 16px;
-    width: 800px;
-}
-.item-header-down {
-    height: 16px;
-    width: 100px;
-}
-.item-header-time {
-    height: 16px;
-    width: 75px;
-}
-.item {
-    height: 32px;
-    width: 32px;
-}
-.name {
-    height: 32px;
-    width: 300px;
-}
-.name-header {
-    height: 16px;
-    width: 300px;
-}
 
-.stats-panel {
+/* .stats-panel {
   position:absolute;
   margin: 5px;
   top:0px;
   left:0px;
   right:0px;
   bottom: 0px;
-}
+} */
 
-table.fixed {
+/* table.fixed {
 	table-layout:fixed; 
 	width:100%;
-}/*Setting the table width is important!*/
+} */
+/*Setting the table width is important!*/
 
-table.fixed td {
-	overflow:hidden;		/*Hide text outside the cell.*/
-}
+/* table.fixed td { */
+	/* overflow:hidden; */
+			/*Hide text outside the cell.*/
+/* } */
 
-table.fixed td:nth-of-type(1) {
-	width:200px;			/*Setting the width of column 1.*/
-}
+/* table.fixed td:nth-of-type(1) { */
+	/* width:200px; */
+				/*Setting the width of column 1.*/
+/* } */
 
-table.fixed td:nth-of-type(2) {
-	width:100px;			/*Setting the width of column 2.*/
-}
+/* table.fixed td:nth-of-type(2) { */
+	/* width:100px; */
+				/*Setting the width of column 2.*/
+/* } */
 
-table.fixed td:nth-of-type(3) {
-	width:25px;				/*Setting the width of column 3.*/
-	text-align: center;
-}
+/* table.fixed td:nth-of-type(3) { */
+	/* width:25px; */
+					/*Setting the width of column 3.*/
+	/* text-align: center; */
+/* } */
 
-table.fixed td:nth-of-type(4) {
-	width:25px;				/*Setting the width of column 3.*/
-	text-align: center;
-}
+/* table.fixed td:nth-of-type(4) { */
+	/* width:25px; */
+					/*Setting the width of column 3.*/
+	/* text-align: center; */
+/* } */
 
 /* The side navigation menu */
-.sidenav {
-    height: 800px; /* 100% Full-height */
-    width: 0px; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
-    top: 0;
-    left: 0;
-    background-color: white; /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 10px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-}
+/* .sidenav { */
+	/* height: 800px; */
+	 /* 100% Full-height */
+	/* width: 0px; */
+	 /* 0 width - change this with JavaScript */
+	/* position: fixed; */
+	 /* Stay in place */
+	/* z-index: 1; */
+	 /* Stay on top */
+    /* top: 0; */
+    /* left: 0; */
+	/* background-color: white; */
+	 /* Black*/
+	/* overflow-x: hidden; */
+	 /* Disable horizontal scroll */
+	/* padding-top: 10px; */
+	 /* Place content 60px from the top */
+	/* transition: 0.5s; */
+	 /* 0.5 second transition effect to slide in the sidenav */
+/* } */
 
 /* The navigation menu links */
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s
-}
+/* .sidenav a { */
+    /* padding: 8px 8px 8px 32px; */
+    /* text-decoration: none; */
+    /* font-size: 25px; */
+    /* color: #818181; */
+    /* display: block; */
+    /* transition: 0.3s */
+/* } */
 
 /* When you mouse over the navigation links, change their color */
-.sidenav a:hover, .offcanvas a:focus{
-    color: #1111ff;
-}
+/* .sidenav a:hover, .offcanvas a:focus{ */
+    /* color: #1111ff; */
+/* } */
 
 /* Position and style the close button (top right corner) */
-.sidenav .closebtn {
-    position: absolute;
-    top: 25px;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
+/* .sidenav .closebtn { */
+    /* position: absolute; */
+    /* top: 25px; */
+    /* right: 25px; */
+    /* font-size: 36px; */
+    /* margin-left: 50px; */
+/* } */
 
-.sidenav .title {
-	font-size:48px;
-	margin:10px;
-	font-family: Impact;
-	text-shadow: 5px 5px 10px #222222;
+/* .sidenav .title { */
+	/* font-size:48px; */
+	/* margin:10px; */
+	/* font-family: Impact; */
+	/* text-shadow: 5px 5px 10px #222222; */
 	/*text-shadow: 0 0 10px #0000ff;*/
-}
+/* } */
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-#main {
-    transition: margin-left .5s;
-    padding: 20px;
-}
+/* #main { */
+    /* transition: margin-left .5s; */
+    /* padding: 20px; */
+/* } */
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-}
+/* @media screen and (max-height: 450px) { */
+    /* .sidenav {padding-top: 15px;} */
+    /* .sidenav a {font-size: 18px;} */
+/* } */
 
-.teamselectitem-border {
-	border: 2px solid blue;
-	border-radius: 5px;
-	margin: 5px;
-	min-width: 220px;
-}
-.teamselectitem-title {
-	font-size: 24px;
-}
+/* .teamselectitem-border { */
+	/* border: 2px solid blue; */
+	/* border-radius: 5px; */
+	/* margin: 5px; */
+	/* min-width: 220px; */
+/* } */
+/* .teamselectitem-title { */
+	/* font-size: 24px; */
+/* } */

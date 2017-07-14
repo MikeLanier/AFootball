@@ -1,18 +1,20 @@
-<div class="stats">
-    <!--<div class="stats-panel border white-background">-->
-		<table class="fixed" style="background-color: green" border="1">
-			<tr bgcolor="white">
-				<th>{{stats_title.label}}</th>
-				<th>{{stats_title.sublabel}}</th>
-				<th>{{stats_title.home_value}}</th>
-				<th>{{stats_title.visitor_value}}</th>
-			</tr>
-			<tr ng-repeat="stat_item in stat_items" bgcolor="white">
-				<td>{{stat_item.label}}</td>
-				<td>{{stat_item.sublabel}}</td>
-				<td>{{stat_item.home_value}}</td>
-				<td>{{stat_item.visitor_value}}</td>
-			</tr>
-		</table>
-	<!--</div>-->
-</div>
+<table  bgcolor="green" style="position: relative" border="1" class="stat-table">
+	<tr bgcolor="white">
+		<th>{{stats_title.label}}</th>
+		<th>{{stats_title.sublabel}}</th>
+		<th>{{stats_title.home_value}}</th>
+		<th>{{stats_title.visitor_value}}</th>
+	</tr>
+	<tr ng-repeat="stat_item in stat_items" bgcolor="white">
+		<td>{{stat_item.label}}</td>
+		<td>{{stat_item.sublabel}}</td>
+		<td>{{stat_item.home_value}}</td>
+		<td>{{stat_item.visitor_value}}</td>
+	</tr>
+</table>
+
+<style>
+.stat-table {
+	max-height: 50%
+}
+</style>
