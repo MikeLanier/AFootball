@@ -1,20 +1,23 @@
 <table  bgcolor="green" style="position: relative" border="1" class="stat-table">
 	<tr bgcolor="white">
-		<th bgcolor="white">{{stats_title.label}}</th>
-		<th>{{stats_title.sublabel}}</th>
-		<th>{{stats_title.home_value}}</th>
-		<th>{{stats_title.visitor_value}}</th>
+		<th style="width:25%" bgcolor="white">{{stats_title.label}}</th>
+		<th style="width:25%">{{stats_title.sublabel}}</th>
+		<th style="width:25%">{{stats_title.home_value}}</th>
+		<th style="width:25%">{{stats_title.visitor_value}}</th>
 	</tr>
 	<tr ng-repeat="stat_item in stat_items" bgcolor="white">
-		<td>{{stat_item.label}}</td>
-		<td>{{stat_item.sublabel}}</td>
-		<td>{{stat_item.home_value}}</td>
-		<td>{{stat_item.visitor_value}}</td>
+		<td align="left">{{stat_item.label}}</td>
+		<td align="left">{{stat_item.sublabel}}</td>
+		<td align="center">{{stat_item.home_value}}</td>
+		<td align="center">{{stat_item.visitor_value}}</td>
 	</tr>
 </table>
 
 <style>
 .stat-table {
 	max-height: 50%
+}
+.stat_item {
+	text-align: center;
 }
 </style>
