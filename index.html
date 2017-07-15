@@ -19,27 +19,27 @@
 
   <body>
 	<div id="frame" ng-controller="AFootballCtrl" elheightresize>
-		 <!-- <teamselect gamedata="gamedata"></teamselect>  -->
-		<table bgcolor="darkgreen">
-			<tr height="10%" bgcolor="gray">
+		<teamselect gamedata="gamedata"></teamselect>  
+		<table bgcolor="white" style="left:5px;position:absolute">
+			<tr height="10%" bgcolor="darkgreen">
 				<td class="border" width="70%"><scoreboard gamedata="gamedata"></scoreboard></td> 
 				<td class="border" width="29%" rowspan="3">
-					<div class="border" style="width:100%; height: 100%; max-height:100%; background-color: gray; position:flex; overflow: auto">
+					<div class="stat-panel">
 						<stats gamedata="gamedata"></stats>
 					</div>
 				</td>
 			</tr>
-			<tr height="45%" bgcolor="gray">
+			<tr height="45%" bgcolor="darkgreen">
 				<td class="border">
 					<field gamedata="gamedata"></field>
 				</td> 
 			</tr>
-			<tr height="15%" bgcolor="gray">
+			<tr height="15%" bgcolor="darkgreen">
 				 <td class="border"><output gamedata="gamedata"></output></td> 
 			</tr>
 			<tr height="15%">
-				 <td class="border" bgcolor="gray"><options gamedata="gamedata"></options></td> 
-				 <td class="border" bgcolor="gray"><debug gamedata="gamedata"></debug></td> 
+				 <td class="border" bgcolor="darkgreen"><options gamedata="gamedata"></options></td> 
+				 <td class="border" bgcolor="darkgreen"><debug gamedata="gamedata"></debug></td> 
 			</tr>
 		</table>
 	</div>
@@ -49,13 +49,18 @@
 
 <style>
 table {
-	margin: 5px; 
-	border: 2px solid black;
-	border-radius: 5px;   
 	left: 0;
 	top: 0;
 	width: calc(100% - 10px);
 	height: calc(100% - 10px);
 	position: fixed;
+}
+.stat-panel {
+	width:100%; 
+	height: 100%; 
+	max-height:100%; 
+	background-color: darkgreen; 
+	position:flex; 
+	overflow: auto
 }
 </style>

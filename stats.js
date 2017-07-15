@@ -41,7 +41,17 @@ angular.module("AFootball")
 					{ label: "",			sublabel: "Made",		home_value: "0",	visitor_value: "0"},
 					{ label: "",			sublabel: "Length",		home_value: "0",	visitor_value: "0"},
 					{ label: "Penalty",		sublabel: "Yards",		home_value: "0",	visitor_value: "0"},
-					{ label: "",			sublabel: "Num",		home_value: "0",	visitor_value: "0"}
+					{ label: "",			sublabel: "Num",		home_value: "0",	visitor_value: "0"},
+					{ label: "Rush",		sublabel: "Yards",		home_value: "0",	visitor_value: "0"},
+					{ label: "",			sublabel: "Att",		home_value: "0",	visitor_value: "0"},
+					{ label: "",			sublabel: "TD",			home_value: "0",	visitor_value: "0"},
+					{ label: "Pass",		sublabel: "Yards",		home_value: "0",	visitor_value: "0"},
+					{ label: "",			sublabel: "Att",		home_value: "0",	visitor_value: "0"},
+					{ label: "",			sublabel: "Complete",	home_value: "0",	visitor_value: "0"},
+					{ label: "",			sublabel: "TD",			home_value: "0",	visitor_value: "0"},
+					{ label: "",			sublabel: "Int",		home_value: "0",	visitor_value: "0"},
+					{ label: "Total",		sublabel: "Yards",		home_value: "0",	visitor_value: "0"},
+					{ label: "",			sublabel: "Plays",		home_value: "0",	visitor_value: "0"},
 				];
 			}
 		}
