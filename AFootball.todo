@@ -30,14 +30,15 @@ AFootball:
 		drives:
 			☐ create code for the drives display
 	output:
-		☐ control for displaying multi colored text
+		✔ control for displaying multi colored text @done (7/15/2017, 4:45:46 PM)
 		☐ methods for adding text to display
-		☐ text ctrl auto resize in height and width
+		✔ text ctrl auto resize in height and width @done (7/15/2017, 4:45:55 PM)
+		✔ control scrolls when full @done (7/15/2017, 4:46:20 PM)
 	options:
 		✔ add buttons for the different options. @done (7/10/2017, 6:42:48 AM)
 		☐ buttons need to hilite on hover and on select
 	stats:
-		☐ create a four column list for displaying the in game stats in the gamedata.  
+		✔ create a four column list for displaying the in game stats in the gamedata. @done (7/15/2017, 10:06:31 AM)
 		☐ add watchers to update the in game stats display when something appropriate in the gamedata changes
 	debug:
 		✔ add an edit control in which to enter debug commmands @done (7/10/2017, 8:13:18 PM)
@@ -50,8 +51,8 @@ AFootball:
 			☐ make sure the field detects the addition of the new result to the stack and updates the fields
 	team select:
 		✔ slide out that displays the list of teams @done (7/12/2017, 7:25:25 AM)
-		☐ slide out shows when team name on scoreboard is clicked
-		☐ what the list of teams from a text(csv) file, but have yet to figure that out
+		✔ slide out shows when team name on scoreboard is clicked @done (7/15/2017, 10:06:56 AM)
+		☐ want the list of teams from a text(csv) file, but have yet to figure that out
 		✔ list of teams from hardcoded, in code array @done (7/12/2017, 7:25:31 AM)
 		✔ team item hilite on over @done (7/12/2017, 5:14:48 PM)
 		☐ load team on click
@@ -60,14 +61,14 @@ AFootball:
 		☐ parse and react to the result
 
 debug commands:
-	d
-	g
-	o
-	q
-	s
-	t
-	y
-
+	d: change down
+	g: change togo
+	o: change offense (o,h. or o,v.)
+	q: change quarter
+	s: change active quarter score (s,h,#. or s,v,#.)
+	t: change time
+	y: change yardline
+available debug letters:
 a
 b
 c

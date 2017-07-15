@@ -22,8 +22,8 @@
 		<teamselect gamedata="gamedata"></teamselect>  
 		<table bgcolor="white" style="left:5px;position:absolute">
 			<tr height="10%" bgcolor="darkgreen">
-				<td class="border" width="70%"><scoreboard gamedata="gamedata"></scoreboard></td> 
-				<td class="border" width="29%" rowspan="3">
+				<td class="border" width="75%"><scoreboard gamedata="gamedata"></scoreboard></td> 
+				<td class="border" width="24%" rowspan="3">
 					<div class="stat-panel">
 						<stats gamedata="gamedata"></stats>
 					</div>
@@ -34,10 +34,14 @@
 					<field gamedata="gamedata"></field>
 				</td> 
 			</tr>
-			<tr height="15%" bgcolor="darkgreen">
-				 <td class="border"><output gamedata="gamedata"></output></td> 
+			<tr height="20%" bgcolor="darkgreen">
+				<td class="border">
+					<div class="stat-panel">
+						<output gamedata="gamedata"></output>
+					</div>
+				</td> 
 			</tr>
-			<tr height="15%">
+			<tr height="10%">
 				 <td class="border" bgcolor="darkgreen"><options gamedata="gamedata"></options></td> 
 				 <td class="border" bgcolor="darkgreen"><debug gamedata="gamedata"></debug></td> 
 			</tr>
@@ -56,11 +60,13 @@ table {
 	position: fixed;
 }
 .stat-panel {
-	width:100%; 
+	width: calc(100% - 5px); 
 	height: 100%; 
 	max-height:100%; 
-	background-color: darkgreen; 
+	background-color: white;
 	position:flex; 
-	overflow: auto
+	overflow: auto;
+	border: 1px solid black;
+	border-radius: 5px;
 }
 </style>
