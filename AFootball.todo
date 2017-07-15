@@ -59,6 +59,9 @@ AFootball:
 	running a play:
 		☐ get a result from either the debug result stack or the team data
 		☐ parse and react to the result
+	user Q/A:
+		✔ create a panel in which question can be presented to the user and users can replay @done (7/15/2017, 6:15:22 PM)
+		☐ create the Q/A UI
 
 debug commands:
 	d: change down
