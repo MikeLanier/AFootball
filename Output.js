@@ -1,11 +1,9 @@
 angular.module("AFootball")
-	.component("output",{
-		templateUrl: "output.html",
-		bindings: { 
-			name: "@",
-			title: "=" 
-		},
-		controller: function() {
-		  	this.myName = 'Mike';
+	.directive('output', function() {
+		return {
+			templateUrl: "output.html",
+			scope: { gamedata: '='},
+			link: function(scope, elem, attrs) {
+			}
 		}
 	});

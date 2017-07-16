@@ -36,7 +36,10 @@ AFootball:
 		✔ control scrolls when full @done (7/15/2017, 4:46:20 PM)
 	options:
 		✔ add buttons for the different options. @done (7/10/2017, 6:42:48 AM)
-		☐ buttons need to hilite on hover and on select
+		☐ buttons need to 
+			✔ hilite on hover and @done (7/16/2017, 8:59:35 AM)
+			☐ hilite on select
+		☐ start play on click
 	stats:
 		✔ create a four column list for displaying the in game stats in the gamedata. @done (7/15/2017, 10:06:31 AM)
 		☐ add watchers to update the in game stats display when something appropriate in the gamedata changes

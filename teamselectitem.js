@@ -2,7 +2,8 @@ angular.module("AFootball")
 	.directive('teamselectitem', function() {
     return {
 		scope: {
-			team: '='
+			team: '=',
+			gamedata: '='
 		},
 		templateUrl: "teamselectitem.html",
         link: function(scope, elem, attrs) {

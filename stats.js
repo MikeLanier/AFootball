@@ -1,13 +1,7 @@
 angular.module("AFootball")
-	// .component("stats",{
-	// 	templateUrl: "stats.html",
-	// 	bindings: { 
-	// 	},
-	// 	controller: function() {
-	// 	  	this.myName = 'Mike';
-	// 	}
 	.directive('stats', function() {
 		return {
+			scope: { gamedata: '=' },
 			templateUrl: "stats.html",
 			link: function(scope, elem, attrs) {
 				scope.stats_title = { label: "--",	sublabel: "--",	home_value: "HOME",	visitor_value: "VIS" };

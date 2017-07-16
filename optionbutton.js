@@ -3,7 +3,8 @@ angular.module("AFootball")
     return {
 		scope: {
 			opttitle: '=',
-			xxx: '='
+			xxx: '=',
+			gamedata: '='
 		},
 		templateUrl: "optionbutton.html",
         link: function(scope, elem, attrs) {

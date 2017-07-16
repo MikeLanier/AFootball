@@ -130,6 +130,7 @@ document.write("<script type='text/javascript' src='./assets/Teams/CSV/Tennessee
 angular.module("AFootball")
 	.directive('teamselect', function() {
     return {
+		scope: { gamedata: '=' },
 		templateUrl: "teamselect.html",
         link: function(scope, elem, attrs) {
 			// console.log("what.length: " + scope.what.teams.length);
