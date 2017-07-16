@@ -9,8 +9,8 @@ angular.module("AFootball")
 		templateUrl: "optionbutton.html",
         link: function(scope, elem, attrs) {
 
-			console.log("optionbutton: opttitle: " + scope.opttitle);
-			console.log("optionbutton: cmdID: " + scope.xxx);
+			// console.log("optionbutton: opttitle: " + scope.opttitle);
+			// console.log("optionbutton: cmdID: " + scope.xxx);
 
 			scope.bgcolor = 'white-background';
 			

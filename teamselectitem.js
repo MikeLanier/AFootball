@@ -9,7 +9,10 @@ angular.module("AFootball")
         link: function(scope, elem, attrs) {
 
 			scope.border = 'teamselectitem-border-white';
-			
+
+			scope.helmet = scope.team.helmet;
+			// console.log(scope.helmet);
+
 			scope.closeNav = function() {
 				// console.log("closeNav");
 		        document.getElementById("mySidenav").style.width = "0px";
