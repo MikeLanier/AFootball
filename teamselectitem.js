@@ -29,7 +29,8 @@ angular.module("AFootball")
 			};
 
 			scope.click = function() {
-				console.log("click");
+				console.log("click: " + scope.team.tag);
+				scope.$emit('LOAD-TEAM', scope.team.tag);
 			};
 		}
     }
