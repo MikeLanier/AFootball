@@ -1,10 +1,28 @@
 angular.module("AFootball")
-	.directive('debug', function() {
+	.directive('debug', ['$http', function($http) {
     return {
 		templateUrl: "debug.html",
 		scope: { gamedata: '='},
-        link: function(scope, elem, attrs) {
+        link: function(scope, elem, attrs, http) {
 			scope.message = "";
+
+			// elem.bind('change', function (evt) {
+			// 	console.log('fileAdded: ' + evt.target.files[0]);
+			// 	var reader = new FileReader();
+
+			// 	reader.onload = function (e) {
+			// 		console.log(e);
+			// 		console.log("this.result: " + this.result);
+			// 		console.log("scope.result: " + scope.result);
+			// 		var lines = this.result.split('\n');
+			// 		for(var line = 0; line < lines.length; line++){
+			// 		console.log(lines[line]);
+			// 		}				
+			// 	}
+
+			// 	reader.readAsText(evt.target.files[0]);
+			// });
+			
             elem.bind('keyup', function(event) {
 
 				// console.log("keyup: " + scope.message);
@@ -102,4 +120,4 @@ angular.module("AFootball")
 			}
         }
     }
-});
+}]);
