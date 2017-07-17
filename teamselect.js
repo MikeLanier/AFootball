@@ -285,12 +285,12 @@ angular.module("AFootball")
 			// }
 
 			scope.closeNav = function() {
-				console.log("closeNav");
+				// console.log("closeNav");
 		        document.getElementById("mySidenav").style.width = "0px";
 			};
 
 			scope.click = function() {
-				console.log("click");
+				// console.log("click");
 		        document.getElementById("mySidenav").style.width = "250px";
 			};
 
@@ -298,11 +298,14 @@ angular.module("AFootball")
 				console.log('teamselect: LOAD-TEAM: data: ' + data)
 
 				var n = scope.teams.length;
-				console.log('n: '  + n);
+				// console.log('n: '  + n);
 				for(var i=0; i<n; i++) {
-					console.log(i + ", " + scope.teams[i].key + ", " + data);
+					// console.log(i + ", " + scope.teams[i].key + ", " + data);
 					if(scope.teams[i].key === data) {
-						console.log(scope.teams[i].value.stuff[0]);
+						// console.log(scope.teams[i].value.stuff[0]);
+
+						var team = new JTeam();
+						team.load(scope.teams[i].value.stuff);
 						break;
 					}
 				}

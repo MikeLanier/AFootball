@@ -4,7 +4,7 @@ angular.module("AFootball")
 			scope: { gamedata: '=' },
 			templateUrl: "field.html",
 			link: function(scope, elem, attrs) {
-				console.log("field: link");
+				// console.log("field: link");
 
 				var width = '360px';
 				var height = '150px';
@@ -25,7 +25,7 @@ angular.module("AFootball")
 				// compute the scaled height, width and border
 				var w = iwidth * scale;
 				var h = iheight * scale;
-				console.log("field.js: w, h: " + w + ", " + h);
+				// console.log("field.js: w, h: " + w + ", " + h);
 				width = w.toString() + 'px';
 				height = h.toString() + 'px';
 				border = scale.toString() + "px solid white";
@@ -285,19 +285,19 @@ angular.module("AFootball")
 				);
 
 				scope.onResize = function() {
-					console.log("field.js: onResize");
+					// console.log("field.js: onResize");
 					var frame = document.getElementById("frame");
 
 					scope.gamedata.frameWidth = frame.clientWidth;
 					scope.gamedata.frameHeight = frame.clientHeight;
-					console.log("field.js: header.clientHeight: " + frame.clientHeight);
-					console.log("field.js: header.clientWidth: " + frame.clientWidth + ", " + scope.gamedata.frameWidth);
+					// console.log("field.js: header.clientHeight: " + frame.clientHeight);
+					// console.log("field.js: header.clientWidth: " + frame.clientWidth + ", " + scope.gamedata.frameWidth);
 
 					var fw = scope.gamedata.frameWidth * .80;
 					var w1 = 1080 / 2;
 					var w2 = fw /  2;
 					var w3 = w2 - w1;
-					console.log(w1 + ", " + w2 + ", " + w3);
+					// console.log(w1 + ", " + w2 + ", " + w3);
 					var field = document.getElementById('field');
 					field.style.transform = "translate(" + w3 + "px,0)";
 				}

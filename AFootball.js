@@ -1,6 +1,6 @@
 angular.module("AFootball", [])
 	.controller('AFootballCtrl', function AFootballCtrl($scope, $window) {
-		console.log("AFootball.js: AFootballCtrl")
+		// console.log("AFootball.js: AFootballCtrl")
 
 		$scope.gamedata = {
 			trigger: 0,
