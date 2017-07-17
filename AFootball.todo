@@ -26,6 +26,8 @@ AFootball:
 		✔ when either the home or visitor name control is clicked, open the team select side panel and tell the controller to load the selected team @done (7/12/2017, 8:18:07 AM)
 		✔ change the background color of the quarter header to white or yellow depending on which quarter it is and automatically change when quarter changes @done (7/11/2017, 12:10:19 PM)
 		✔ change the background color of the home and visitor team name to white or yellow depending on which is on offense and automatically change when offense changes @done (7/11/2017, 12:10:18 PM)
+		☐ put button in team select field to open the file open dialog and have the user select a team
+			☐ after selecting a team allocate and load the team data
 	field:
 		✔ find a way to get the current size of the field panel and center the field @done (7/16/2017, 7:28:52 PM)
 		✔ find a way to detect that the size of the field panel has changes and redraw/recreate the field if there is a need to go to a smaller/larger scale. Applying a scale transformation would not look too good. @done (7/16/2017, 7:28:53 PM)
@@ -66,6 +68,7 @@ AFootball:
 		✔ list of teams from hardcoded, in code array @done (7/12/2017, 7:25:31 AM)
 		✔ team item hilite on over @done (7/12/2017, 5:14:48 PM)
 		☐ load team on click
+		
 	running a play:
 		☐ get a result from either the debug result stack or the team data
 		☐ parse and react to the result
