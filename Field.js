@@ -1,10 +1,10 @@
 angular.module("AFootball")
-	.directive("field", function() {
+	.directive("field", [ '$window', function($window) {
 		return {
 			scope: { gamedata: '=' },
 			templateUrl: "field.html",
 			link: function(scope, elem, attrs) {
-				// console.log("field: link");
+				console.log("field: link");
 
 				var width = '360px';
 				var height = '150px';
@@ -25,7 +25,7 @@ angular.module("AFootball")
 				// compute the scaled height, width and border
 				var w = iwidth * scale;
 				var h = iheight * scale;
-				// console.log("field.js: one");
+				console.log("field.js: w, h: " + w + ", " + h);
 				width = w.toString() + 'px';
 				height = h.toString() + 'px';
 				border = scale.toString() + "px solid white";
@@ -48,6 +48,7 @@ angular.module("AFootball")
 				field.style.position = "relative";
 				field.style.width = width;
 				field.style.height = height;
+				field.style.transform = "translate(50px,0)";
 
 				var border = document.createElement('div');
 				border.style.borderTop='medium solid';
@@ -283,6 +284,29 @@ angular.module("AFootball")
 					}
 				);
 
+				scope.onResize = function() {
+					console.log("field.js: onResize");
+					var frame = document.getElementById("frame");
+
+					scope.gamedata.frameWidth = frame.clientWidth;
+					scope.gamedata.frameHeight = frame.clientHeight;
+					console.log("field.js: header.clientHeight: " + frame.clientHeight);
+					console.log("field.js: header.clientWidth: " + frame.clientWidth + ", " + scope.gamedata.frameWidth);
+
+					var fw = scope.gamedata.frameWidth * .80;
+					var w1 = 1080 / 2;
+					var w2 = fw /  2;
+					var w3 = w2 - w1;
+					console.log(w1 + ", " + w2 + ", " + w3);
+					var field = document.getElementById('field');
+					field.style.transform = "translate(" + w3 + "px,0)";
+				}
+				scope.onResize();
+
+				angular.element($window).bind('resize', function() {
+					scope.onResize();
+				})
+			
 				// scope.$watch(
 				// 	// This is the important part
 				// 	function() {
@@ -342,4 +366,4 @@ angular.module("AFootball")
 				}
 			},
 		}
-	});
+	}]);

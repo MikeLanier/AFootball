@@ -18,23 +18,8 @@ angular.module("AFootball", [])
 			to: [ 3, 3 ],
 			name: [ 'HOME', 'VISITOR' ],
 			teams: [ null, null ],
-			who: 0
+			who: 0,
+			frameWidth: 0,
+			frameHeight: 0
 		};
   	})
-	.directive('elheightresize', ['$window', function($window) {
-    return {
-        link: function(scope, elem, attrs) {
-            scope.onResize = function() {
-				console.log("onResize");
-				var frame = document.getElementById("frame");
-				console.log("header.clientHeight: " + frame.clientHeight);
-				console.log("header.clientWidth: " + frame.clientWidth);
-            }
-            scope.onResize();
-
-            angular.element($window).bind('resize', function() {
-                scope.onResize();
-            })
-        }
-    }
-}])
