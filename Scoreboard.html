@@ -11,7 +11,8 @@
 		<th class="scoreboard-item border white-background">TO</th>
 	</tr>
 	<tr height="35%">
-		<th class="scoreboard-name border white-background" ng-click="hometeamselect()" :style="{'background-color': homebackground}" id="homename">{{gamedata.name[0]}}</th>
+		<!-- <th class="scoreboard-name border white-background" ng-click="hometeamselect()" :style="{'background-color': homebackground}" id="homename">{{gamedata.name[0]}}</th> -->
+		<th class="scoreboard-name border white-background" :style="{'background-color': homebackground}" id="homename"><input type="file" file-dialog></input></th>
 		<th class="scoreboard-item border white-background">{{gamedata.score[0][0]}}</th>
 		<th class="scoreboard-item border white-background">{{gamedata.score[0][1]}}</th>
 		<th class="scoreboard-item border white-background">{{gamedata.score[0][2]}}</th>
@@ -22,7 +23,8 @@
 		<th class="scoreboard-item border white-background">{{gamedata.to[0]}}</th>
 	</tr>
 	<tr>
-		<th class="scoreboard-name border white-background" ng-click="visitorteamselect()" :style="{'background-color': visitorbackground}" id="visitorname">{{gamedata.name[1]}}</th>
+		<!-- <th class="scoreboard-name border white-background" ng-click="visitorteamselect()" :style="{'background-color': visitorbackground}" id="visitorname">{{gamedata.name[1]}}</th> -->
+		<th class="scoreboard-name border white-background" :style="{'background-color': visitorbackground}" id="visitorname"><input type="file" file-dialog></input></th>
 		<th class="scoreboard-item border white-background">{{gamedata.score[1][0]}}</th>
 		<th class="scoreboard-item border white-background">{{gamedata.score[1][1]}}</th>
 		<th class="scoreboard-item border white-background">{{gamedata.score[1][2]}}</th>

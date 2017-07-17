@@ -8,6 +8,21 @@ angular.module("AFootball")
 				// console.log(scope.gamedata.name[0]);
 				// console.log(scope.gamedata.name[1]);
 
+				elem.bind('change', function (evt) {
+					console.log('fileAdded: ' + evt.target.files[0]);
+					var reader = new FileReader();
+
+					reader.onload = function (e) {
+						console.log("scope.result: " + this.scope.result);
+						// var lines = this.result.split('\n');
+						// for(var line = 0; line < lines.length; line++){
+						// 	console.log(lines[line]);
+						// }				
+					}
+
+					reader.readAsText(evt.target.files[0]);
+				});
+
 				scope.hometeamselect = function() {
 			        document.getElementById("mySidenav").style.width = "300px";
 				};
