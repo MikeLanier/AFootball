@@ -117,7 +117,7 @@ var _play = 0; //Plays;
 class JResult
 {
 	constructor() {
-		console.log('JResult');
+		// console.log('JResult');
 		_yards = 0;
 		_play = Plays.Undefined;
 
@@ -149,7 +149,7 @@ class JResult
 		if(_yardageModifier != YardageModifiers.Undefined)	s = s + "\n    yMod : " + _yardageModifier;
 		if(_actionModifier != ActionModifiers.Undefined)	s = s + "\n    aMod : " + _actionModifier;
 
-		for(var i=0; i<_otherModifiers.size(); i++)
+		for(var i=0; i<_otherModifiers.length; i++)
 		{
 			if(i==0)
 				s = s + "\n    oMods: " + _otherModifiers.get(i);
@@ -579,13 +579,13 @@ class JResult
 				}
 				catch(e)
 				{
-					System.out.println("Results.cs: Exception thrown: String [" + str + "]");
+					console.log("Results.cs: Exception thrown: String [" + str + "]");
 				}
 			}
 		}
 		catch(e)
 		{
-			System.out.println("Results.cs: Exception caught");
+			console.log("Results.cs: Exception caught");
 		}
 	}
 
