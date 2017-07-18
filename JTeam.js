@@ -30,7 +30,28 @@ class JTeam {
 			}
 		}
 	}
-	load(stuff) {
-		console.log('JTeam:load: ' + stuff[0])
+
+	load(lines) {
+		console.log('JTeam:load: ')
+		for(var i = 0; i < lines.length; i++){
+			if(i === 0) {
+				var items = lines[i].split(',');
+
+				for(var j=0; j<items.length; j++) {
+					console.log('   ' + items[j]);
+
+					this.name = items[1];
+					this.nickname = items[2];
+					this.year = items[0];
+					if(items.length > 6) this.helmet = items[6];
+					this.fumble = parseInt(items[3]);
+
+					// helmet = helmet.replace("c:\\Mike\\Football\\", "");
+
+					if(items.length > 7) this.abrv = items[7];
+					// if(abrv.length() == 0) abrv = this.name.substring(0,3);
+				}
+			}
+		}				
 	}
 }

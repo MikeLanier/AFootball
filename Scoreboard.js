@@ -1,23 +1,53 @@
 angular.module("AFootball")
 	.directive('scoreboard', function() {
 		return {
-			scope: { gamedata: '=' },
+			scope: { 
+				gamedata: '='
+			},
+
 			templateUrl: "scoreboard.html",
 			link: function(scope, elem, attrs) {
 				// console.log("scoreboard: link");
 				// console.log(scope.gamedata.name[0]);
 				// console.log(scope.gamedata.name[1]);
+				scope.homename = scope.gamedata.name[0];
+				scope.visitorname = scope.gamedata.name[1];
+				scope.homeselect = true;
+				scope.visitorselect = true;
 
 				elem.bind('change', function (evt) {
-					console.log('fileAdded: ' + evt.target.files[0]);
+					console.log('fileAdded: ' + evt.target.id);
 					var reader = new FileReader();
 
+					var who = 0;
+					if(evt.target.id == "visitorselect") {
+						who = 1;
+					}
+
 					reader.onload = function (e) {
-						console.log("scope.result: " + this.scope.result);
-						// var lines = this.result.split('\n');
-						// for(var line = 0; line < lines.length; line++){
-						// 	console.log(lines[line]);
-						// }				
+						// console.log(e);
+						// console.log("this.result: " + this.result);
+						// console.log("scope.result: " + scope.result);
+						var lines = this.result.split('\n');
+						scope.gamedata.teams[who] = new JTeam();
+						scope.gamedata.teams[who].load(lines);
+
+						if(who === 0) {
+							scope.homename = scope.gamedata.teams[0].name.toUpperCase();
+							console.log('scope.homename: ' + scope.homename);
+							// document.getElementById("homeselect").style.visibility = "hidden";
+							scope.$apply(function() {
+								scope.homeselect = false;
+							});
+						}
+						else {
+							scope.visitorname = scope.gamedata.teams[1].name.toUpperCase();
+							console.log('scope.visitorname: ' + scope.visitorname);
+							// document.getElementById("visitorselect").style.visibility = "hidden";
+							scope.$apply(function() {
+								scope.visitorselect = false;
+							});
+						}
 					}
 
 					reader.readAsText(evt.target.files[0]);
