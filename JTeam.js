@@ -53,51 +53,48 @@ class JTeam {
 		for(var r=0; r<30; r++)
 		{
 			index++
-			console.log("index: " + index);
-			console.log("lines.length: " + lines.length);
 			items = lines[index].split(',');
+			console.log("-----> r: " + r);
 
-			console.log("r " + r);
-			console.log("this.offenseResults: " + this.offenseResults);
-			console.log("this.offenseResults[r][0]: " + this.offenseResults[r][0]);
 			this.offenseResults[r][Plays.LinePlunge].Interpret(items[1]);
-			this.offenseResults[r][Plays.Counter].Interpret(items[2]);
-			this.offenseResults[r][Plays.EndReverse].Interpret(items[3]);
-			this.offenseResults[r][Plays.Draw].Interpret(items[4]);
-			this.offenseResults[r][Plays.Option].Interpret(items[5]);
-			this.offenseResults[r][Plays.Screen].Interpret(items[6]);
-			this.offenseResults[r][Plays.SprintOut].Interpret(items[7]);
-			this.offenseResults[r][Plays.Bootleg].Interpret(items[8]);
-			this.offenseResults[r][Plays.Dropback].Interpret(items[9]);
+			// this.offenseResults[r][Plays.Counter].Interpret(items[2]);
+			// this.offenseResults[r][Plays.EndReverse].Interpret(items[3]);
+			// this.offenseResults[r][Plays.Draw].Interpret(items[4]);
+			// this.offenseResults[r][Plays.Option].Interpret(items[5]);
+			// this.offenseResults[r][Plays.Screen].Interpret(items[6]);
+			// this.offenseResults[r][Plays.SprintOut].Interpret(items[7]);
+			// this.offenseResults[r][Plays.Bootleg].Interpret(items[8]);
+			// this.offenseResults[r][Plays.Dropback].Interpret(items[9]);
 
-			this.offenseResults[r][Plays.Breakaway].Interpret(items[10]);
-			this.offenseResults[r][Plays.QuarterbackRun].Interpret(items[11]);
-			this.offenseResults[r][Plays.QuarterbackTrapped].Interpret(items[12]);
+			// this.offenseResults[r][Plays.Breakaway].Interpret(items[10]);
+			// this.offenseResults[r][Plays.QuarterbackRun].Interpret(items[11]);
+			// this.offenseResults[r][Plays.QuarterbackTrapped].Interpret(items[12]);
 		}
 
 		index++;
 
-		for(var r=0; r<30; r++)
+		// for(var r=0; r<30; r++)
 		{
-			index++
-			items = lines[index].split(',');
+			// index++
+			// items = lines[index].split(',');
+			// console.log("-----< r: " + r);
 
-			defenseResults[r][Plays.LinePlunge].Interpret(items[1]);
-			defenseResults[r][Plays.Counter].Interpret(items[2]);
-			defenseResults[r][Plays.EndReverse].Interpret(items[3]);
-			defenseResults[r][Plays.Draw].Interpret(items[4]);
-			defenseResults[r][Plays.Option].Interpret(items[5]);
-			defenseResults[r][Plays.Screen].Interpret(items[6]);
-			defenseResults[r][Plays.SprintOut].Interpret(items[7]);
-			defenseResults[r][Plays.Bootleg].Interpret(items[8]);
-			defenseResults[r][Plays.Dropback].Interpret(items[9]);
+			// this.defenseResults[r][Plays.LinePlunge].Interpret(items[1]);
+			// this.defenseResults[r][Plays.Counter].Interpret(items[2]);
+			// this.defenseResults[r][Plays.EndReverse].Interpret(items[3]);
+			// this.defenseResults[r][Plays.Draw].Interpret(items[4]);
+			// this.defenseResults[r][Plays.Option].Interpret(items[5]);
+			// this.defenseResults[r][Plays.Screen].Interpret(items[6]);
+			// this.defenseResults[r][Plays.SprintOut].Interpret(items[7]);
+			// this.defenseResults[r][Plays.Bootleg].Interpret(items[8]);
+			// this.defenseResults[r][Plays.Dropback].Interpret(items[9]);
 
-			offenseResults[r][Plays.Kickoff].Interpret(items[10]);
-			offenseResults[r][Plays.KickoffReturn].Interpret(items[11]);
-			offenseResults[r][Plays.Punt].Interpret(items[12]);
-			if(items.length > 13) offenseResults[r][Plays.PuntReturn].Interpret(items[13]);
-			if(items.length > 14) offenseResults[r][Plays.InterceptionReturn].Interpret(items[14]);
-			if(items.length > 15) offenseResults[r][Plays.FieldGoal].Interpret(items[15]);
+			// this.offenseResults[r][Plays.Kickoff].Interpret(items[10]);
+			// this.offenseResults[r][Plays.KickoffReturn].Interpret(items[11]);
+			// this.offenseResults[r][Plays.Punt].Interpret(items[12]);
+			// if(items.length > 13) this.offenseResults[r][Plays.PuntReturn].Interpret(items[13]);
+			// if(items.length > 14) this.offenseResults[r][Plays.InterceptionReturn].Interpret(items[14]);
+			// if(items.length > 15) this.offenseResults[r][Plays.FieldGoal].Interpret(items[15]);
 		}
 	}
 }

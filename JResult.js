@@ -108,7 +108,7 @@ var Who =
 var _yardageModifier = YardageModifiers.Undefined;
 var _actionModifier = ActionModifiers.Undefined;
 var _otherModifiers = new Array();
-var _source = "";
+var source = "";
 var _who = Who.Undefined;
 
 var _yards = 0;
@@ -118,12 +118,12 @@ class JResult
 {
 	constructor() {
 		// console.log('JResult');
-		_yards = 0;
-		_play = Plays.Undefined;
+		this._yards = 0;
+		this._play = Plays.Undefined;
 
-		_yardageModifier = YardageModifiers.Undefined;
-		_actionModifier = ActionModifiers.Undefined;
-		_otherModifiers = OtherModifiers.Undefined;
+		this._yardageModifier = YardageModifiers.Undefined;
+		this._actionModifier = ActionModifiers.Undefined;
+		this._otherModifiers = OtherModifiers.Undefined;
 	}
 
 	load_from_string(result)
@@ -132,13 +132,13 @@ class JResult
 	}
 
 	yards() {
-		return _yards;
+		return this._yards;
 	}
 
 	otherModifier(modifier) { _otherModifiers.add(modifier); }
 
-	play(play) { _play = play; }
-	play() { return _play; }
+	play(play) { this._play = play; }
+	play() { return this._play; }
 
 	toString()
 	{
@@ -341,7 +341,7 @@ class JResult
 		str = str.replace( "-", "" );
 		str = str.replace( " ", "" );
 
-		if( str.length() > 0 )
+		if( str.length > 0 )
 			return false;
 		else
 			return true;
@@ -349,7 +349,8 @@ class JResult
 
 	Interpret(str)
 	{
-		_source = str;
+		console.log("str: " + str);
+		source = str;
 
 		try
 		{
@@ -358,6 +359,7 @@ class JResult
 			var i = -1;
 			if((i = str.indexOf("(")) >= 0)
 			{
+				console.log("(");
 				str = str.replace("(", "");
 				str = str.replace(")", "");
 
@@ -367,6 +369,7 @@ class JResult
 
 			else if((i = str.indexOf("[")) >= 0)
 			{
+				console.log("[");
 				str = str.replace("[", "");
 				str = str.replace("]", "");
 
@@ -376,6 +379,7 @@ class JResult
 
 			else if((i = str.indexOf("*")) >= 0)
 			{
+				console.log("*");
 				str = str.replace("*", "");
 
 				_otherModifiers.add(OtherModifiers.OB);
@@ -384,6 +388,7 @@ class JResult
 
 			else if((i = str.indexOf("DEFX")) >= 0)
 			{
+				console.log("DEFX");
 				str = str.replace("DEFX", "");
 				_actionModifier = ActionModifiers.DEFX;
 				Interpret(str);
@@ -391,6 +396,7 @@ class JResult
 
 			else if((i = str.indexOf("OFFX")) >= 0)
 			{
+				console.log("OFFX");
 				str = str.replace("OFFX", "");
 				_actionModifier = ActionModifiers.OFFX;
 				Interpret(str);
@@ -398,11 +404,13 @@ class JResult
 
 			else if((i = str.indexOf("BLP")) >= 0)
 			{
+				console.log("BLP");
 				_actionModifier = ActionModifiers.BLP;
 			}
 
 			else if((i = str.indexOf("DEF")) >= 0)
 			{
+				console.log("DEF");
 				str = str.replace("DEF", "");
 				_actionModifier = ActionModifiers.DEF;
 				Interpret(str);
@@ -410,11 +418,13 @@ class JResult
 
 			else if((i = str.indexOf("INC")) >= 0)
 			{
+				console.log("INC");
 				_actionModifier = ActionModifiers.INC;
 			}
 
 			else if((i = str.indexOf("INT")) >= 0)
 			{
+				console.log("INT");
 				str = str.replace("INT", "");
 				_actionModifier = ActionModifiers.INT;
 				Interpret(str);
@@ -422,6 +432,7 @@ class JResult
 
 			else if((i = str.indexOf("OFF")) >= 0)
 			{
+				console.log("OFF");
 				str = str.replace("OFF", "");
 				_actionModifier = ActionModifiers.OFF;
 				Interpret(str);
@@ -429,11 +440,13 @@ class JResult
 
 			else if((i = str.indexOf("SOP")) >= 0)
 			{
+				console.log("SOP");
 				_actionModifier = ActionModifiers.SOP;
 			}
 
 			else if((i = str.indexOf("BK")) >= 0)
 			{
+				console.log("BK");
 				str = str.replace("BK", "");
 				_actionModifier = ActionModifiers.BK;
 				Interpret(str);
@@ -441,24 +454,28 @@ class JResult
 
 			else if((i = str.indexOf("FG")) >= 0)
 			{
+				console.log("FG");
 				_actionModifier = ActionModifiers.FG;
 				_yards = -1;
 			}
 
 			else if((i = str.indexOf("KO")) >= 0)
 			{
+				console.log("KO");
 				_yardageModifier = YardageModifiers.KO;
 				_yards = 1;
 			}
 
 			else if((i = str.indexOf("NG")) >= 0)
 			{
+				console.log("NG");
 				_actionModifier = ActionModifiers.NG;
 				_yards = -1;
 			}
 
 			else if((i = str.indexOf("PI")) >= 0)
 			{
+				console.log("PI");
 				str = str.replace("PI", "");
 				_actionModifier = ActionModifiers.PI;
 				Interpret(str);
@@ -466,46 +483,54 @@ class JResult
 
 			else if((i = str.indexOf("QR")) >= 0)
 			{
+				console.log("QR");
 				_actionModifier = ActionModifiers.QR;
 			}
 
 			else if((i = str.indexOf("QT")) >= 0)
 			{
+				console.log("QT");
 				_actionModifier = ActionModifiers.QT;
 			}
 
 			else if((i = str.indexOf("T1")) >= 0)
 			{
+				console.log("T1");
 				_yardageModifier = YardageModifiers.T1;
 				_yards = 1;
 			}
 
 			else if((i = str.indexOf("T2")) >= 0)
 			{
+				console.log("T2");
 				_yardageModifier = YardageModifiers.T2;
 				_yards = 1;
 			}
 
 			else if((i = str.indexOf("T3")) >= 0)
 			{
+				console.log("T3");
 				_yardageModifier = YardageModifiers.T3;
 				_yards = 1;
 			}
 
 			else if((i = str.indexOf("TD")) >= 0)
 			{
+				console.log("TD");
 				_yardageModifier = YardageModifiers.TD;
 				_yards = 1;
 			}
 
 			else if((i = str.indexOf("B")) >= 0)
 			{
+				console.log("B");
 				_yardageModifier = YardageModifiers.B;
 				_yards = 1;
 			}
 
 			else if((i = str.indexOf("F")) >= 0)
 			{
+				console.log("F");
 				str = str.replace("F", "");
 				_actionModifier = ActionModifiers.F;
 				Interpret(str);
@@ -513,47 +538,54 @@ class JResult
 
 			else if((i = str.indexOf("-DS")) >= 0)
 			{
+				console.log("-DS");
 				_yardageModifier = YardageModifiers.DS_LOSS;
 				_yards = -1;
 			}
 
 			else if((i = str.indexOf("DS")) >= 0)
 			{
+				console.log("DS");
 				_yardageModifier = YardageModifiers.DS_GAIN;
 				_yards = 1;
 			}
 
 			else if((i = str.indexOf("-X")) >= 0)
 			{
+				console.log("-X");
 				_yardageModifier = YardageModifiers.X_LOSS;
 				_yards = -1;
 			}
 
 			else if((i = str.indexOf("X")) >= 0)
 			{
+				console.log("X");
 				_yardageModifier = YardageModifiers.X_GAIN;
 				_yards = 1;
 			}
 
 			else if((i = str.indexOf("S")) >= 0)
 			{
+				console.log("S");
 				_yardageModifier = YardageModifiers.S;
 				_yards = 1;
 			}
 
 			else if((i = str.indexOf("R")) >= 0)
 			{
+				console.log("R");
 				_yardageModifier = YardageModifiers.R;
 				_yards = 1;
 			}
 
 			else if((i = str.indexOf("O")) >= 0)
 			{
+				console.log("O");
 				str = str.replace("O", "");
 				Interpret(str);
 			}
 
-			else if(!Validate(str))
+			else if(!this.Validate(str))
 			{
 				s = "Uninterpreted value \"";
 				s += str;
@@ -562,15 +594,14 @@ class JResult
 
 			else
 			{
-				n = 0;
 				try
 				{
-					if(str.length() > 0)
+					if(str.length > 0)
 					{
 						str = str.replace("+", "");
 						str = str.replace(" ", "");
-						if(str.length() > 0)
-							_yards = Integer.parseInt(str);
+						if(str.length > 0)
+							_yards = parseInt(str);
 						else
 							_yards = 0;
 					}
