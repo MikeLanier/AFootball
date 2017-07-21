@@ -54,11 +54,11 @@ angular.module("AFootball")
 				});
 
 				scope.hometeamselect = function() {
-			        document.getElementById("mySidenav").style.width = "300px";
+			        document.getElementById("teamchartoffense").style.width = "600px";
 				};
 
 				scope.visitorteamselect = function() {
-			        document.getElementById("mySidenav").style.width = "300px";
+			        document.getElementById("teamchartoffense").style.width = "900px";
 				};
 				
 				scope.$watch(

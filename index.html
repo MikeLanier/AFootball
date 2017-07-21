@@ -19,12 +19,14 @@
 	<script src="JResult.js"></script>
 	<script src="JStats.js"></script>
 	<script src="JTeam.js"></script>
+    <script src="teamchartoffense.js"></script>
 
   </head>
 
   <body>
 	<div id="frame" ng-controller="AFootballCtrl">
 		<teamselect gamedata="gamedata"></teamselect>  
+		<teamchartoffense gamedata="gamedata"></teamchartoffense>  
 		<table bgcolor="white" style="left:5px;position:absolute">
 			<tr height="10%" bgcolor="darkgreen">
 				<td class="border" width="55%"><scoreboard gamedata="gamedata"></scoreboard></td> 

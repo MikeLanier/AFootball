@@ -75,6 +75,12 @@ AFootball:
 	user Q/A:
 		✔ create a panel in which question can be presented to the user and users can replay @done (7/15/2017, 6:15:22 PM)
 		☐ create the Q/A UI
+	team charts:
+		☐ click on team name in scoreboard to show team chart
+		☐ on select, offense chart will show by default
+		☐ panel will have option to close or show defense
+		☐ defense select will close offense chart and show defense chart
+		☐ chart will contain JResult directives for each item
 
 debug commands:
 	d: change down
