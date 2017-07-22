@@ -1,10 +1,10 @@
 <div id="teamchartoffense" class="sidenav">
 	<div class="closebtn" ng-click="closeNav()"><img src="./assets/CANCEL_CLOSE.bmp"></img></div>
-	<div class="title">Team Chart</div>
+	<!-- <div class="title">Team Chart</div> -->
 
-	<div style="position:absolute; margin: 20px;">
-		<table style="position:absolute; table-layout:fixed; max-height:40px">
-			<tr height="20px">
+	<div style="position:absolute; margin: 20px">
+		<table style="position:absolute; table-layout:fixed; max-height:40px; border: 1px solid black">
+			<tr height="2px">
 				<td width="28px"></td>
 				<td width="56px"></td>
 				<td width="56px"></td>
@@ -20,6 +20,10 @@
 				<td width="35px"></td>
 				<td width="35px"></td>
 				<td width="28px"></td>
+			</tr>
+			<tr height="20px">
+				<td width="28px" colspan="10"><div class="title">Alabama 2012</div></td>
+				<td width="35px" colspan="4"><img src="./assets/Helmets/Alabama.png"</td>
 			</tr>
 			<tr height="20px">
 				<td width="28px"></td>
@@ -42,9 +46,6 @@
 				<td width="56px" class="cell-border">8</td>
 				<td width="56px" class="cell-border">9</td>
 				<td width="21px"></td>
-				<!-- <td width="35px" class="cell-border"></td>
-				<td width="35px" class="cell-border"></td>
-				<td width="35px" class="cell-border"></td> -->
 				<td width="28px"></td>
 			</tr>
 			<tr height="40px">
@@ -64,8 +65,8 @@
 				<td width="35px" class="cell-border">QT</td>
 				<td width="28px" class="cell-border">#</td>
 			</tr>
-			<tr height="25px">
-				<td width="28px" class="cell-border">10</td>
+			<tr height="25px" ng-repeat="result in results">
+				<td width="28px" class="cell-border">{{result.lineno}}</td>
 				<td width="56px" class="cell-border"></td>
 				<td width="56px" class="cell-border"></td>
 				<td width="56px" class="cell-border"></td>
@@ -79,7 +80,7 @@
 				<td width="35px" class="cell-border"></td>
 				<td width="35px" class="cell-border"></td>
 				<td width="35px" class="cell-border"></td>
-				<td width="28px" class="cell-border">10</td>
+				<td width="28px" class="cell-border">{{result.lineno}}</td>
 			</tr>
 		</table>
 	</div>
@@ -92,178 +93,3 @@
 	text-justify: middle;
 }
 </style>
-
-
-	<!-- <div class="chart">
-		<div>
-			<div class="cell cell_20_28 cell_border_white">.</div>
-			<div class="cell cell_20_224 cell_border">running plays</div>
-			<div class="cell cell_20_56 cell_border">.</div>
-			<div class="cell cell_20_224 cell_border">passing plays</div>
-			<div class="cell cell_20_21 cell_border">x</div>
-			<div class="cell cell_20_105 cell_border">X</div>
-			<div class="cell cell_20_28 cell_border_left">.</div>
-		</div>
-		<div>
-			<div class="cell cell_20_28 cell_border_white">.</div>
-			<div class="cell cell_20_56 cell_border">1</div>
-			<div class="cell cell_20_56 cell_border">2</div>
-			<div class="cell cell_20_56 cell_border">3</div>
-			<div class="cell cell_20_56 cell_border">4</div>
-			<div class="cell cell_20_56 cell_border">5</div>
-			<div class="cell cell_20_56 cell_border">6</div>
-			<div class="cell cell_20_56 cell_border">7</div>
-			<div class="cell cell_20_56 cell_border">8</div>
-			<div class="cell cell_20_56 cell_border">9</div>
-			<div class="cell cell_20_21 cell_border">x</div>
-			<div class="cell cell_20_35 cell_border">X</div>
-			<div class="cell cell_20_35 cell_border">X</div>
-			<div class="cell cell_20_35 cell_border">X</div>
-			<div class="cell cell_20_28 cell_border_left">.</div>
-		</div>
-		<div>
-			<div class="cell cell_40_28 cell_border">#</div>
-			<div class="cell cell_40_56 cell_border">counter</div>
-			<div class="cell cell_40_56 cell_border">line plunge</div>
-			<div class="cell cell_40_56 cell_border">end reverse</div>
-			<div class="cell cell_40_56 cell_border">draw</div>
-			<div class="cell cell_40_56 cell_border">option</div>
-			<div class="cell cell_40_56 cell_border">screen</div>
-			<div class="cell cell_40_56 cell_border">sprint out</div>
-			<div class="cell cell_40_56 cell_border">bootleg</div>
-			<div class="cell cell_40_56 cell_border">drop back</div>
-			<div class="cell cell_40_21 cell_border">#</div>
-			<div class="cell cell_40_35 cell_border">B</div>
-			<div class="cell cell_40_35 cell_border">QR</div>
-			<div class="cell cell_40_35 cell_border">QT</div>
-			<div class="cell cell_40_28 cell_border">#</div>
-		</div>
-	</div>
-</div> -->
-
-<!-- <style>
-.chart {
-	margin: 0px 0px 0px 10px;
-	/* border: 1px solid black; */
-	position: absolute;
-}
-
-.cell_border {
-	border-left: 1px solid black;
-	border-top: 1px solid black;
-	border-right: 1px solid white;
-	border-bottom: 1px solid white; 
-}
-.cell_border_left {
-	border-left: 1px solid black;
-	border-top: 1px solid white;
-	border-right: 1px solid white;
-	border-bottom: 1px solid white; 
-}
-.cell_border_right {
-	border-left: 1px solid black;
-	border-top: 1px solid black;
-	border-right: 1px solid black;
-	border-bottom: 1px solid white; 
-}
-.cell_border_white {
-	border-left: 1px solid white;
-	border-top: 1px solid white;
-	border-right: 1px solid white;
-	border-bottom: 1px solid white; 
-}
-
-.border_left {
-	border-left: 1px solid-black;
-}
-.border_right {
-	border-right: 1px solid-black;
-}
-.border_top {
-	border-top: 2px solid-black;
-}
-.border_bottom {
-	border-bottom: 1px solid-black;
-}
-
-.cell {
-	font-size: 14px;
-	text-align: center;
-	text-justify: middle;
-	display: inline-block;
-	margin: -3px;
-}
-
-.cell_20_28 {
-	height: 20px;
-	width: 28px;
-	background-color: white;
-}
-.cell_20_56 {
-	height: 20px;
-	width: 56px;	
-	background-color: red;
-}
-.cell_20_21 {
-	height: 20px;
-	width: 21px;	
-	background-color: green;
-}
-.cell_20_35 {
-	height: 20px;
-	width: 35px;	
-	background-color: blue;
-}
-.cell_20_105 {
-	height: 20px;
-	width: 105px;
-	background-color: cyan;
-}
-.cell_20_224 {
-	height: 20px;
-	width: 224px;
-	background-color: pink;
-}
-
-.cell_40_28 {
-	height: 40px;
-	width: 28px;
-	background-color: orange;
-}
-.cell_40_56 {
-	height: 40px;
-	width: 56px;
-	background-color: cyan;
-}
-.cell_40_21 {
-	height: 40px;
-	width: 21px;
-	background-color: purple;
-}
-.cell_40_35 {
-	height: 40px;
-	width: 35px;
-	background-color: pink;
-}
-
-.cell_25_28 {
-	height: 25px;	
-	width: 28px;
-	background-color: red;
-}
-.cell_25_56 {
-	height: 25px;	
-	width: 56px;
-	background-color: green;
-}
-.cell_25_21 {
-	height: 25px;	
-	width: 21px;
-	background-color: blue;
-}
-.cell_25_35 {
-	height: 25px;	
-	width: 35px;
-	background-color: yellow;
-}
-</style> -->
