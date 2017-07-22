@@ -1,5 +1,591 @@
-<div id="teamchartoffense" class="sidenav border">
+<div id="teamchartoffense" class="sidenav" class="border_left_top">
 	<div class="closebtn" ng-click="closeNav()"><img src="./assets/CANCEL_CLOSE.bmp"></img></div>
 	<div class="title">Team Chart</div>
+	<div class="chart_row">
+		<div class="chart_cell white_border_left_top" style="height:20px; width:28px"></div>
+		<div class="chart_cell border_right border_left_top" style="height:20px; width:226px">
+			<div style="margin:4px; text-align: center; vertical-align: top;">
+				rushing plays
+			</div>
+		</div>
+		<div class="chart_cell border_right border_left_top" style="height:20px; width:56px"></div>
+		<div class="chart_cell border_right border_left_top" style="height:20px; width:226px;">
+			<div style="margin:4px; text-align: center; vertical-align: top;">
+				passing plays
+			</div>
+		</div>
+		<div class="chart_cell" style="height:20px; width:21px"></div>
+		<div class="chart_cell border_left_top" style="height:20px; width:35px"></div>
+		<div class="chart_cell border_left_top" style="height:20px; width:35px"></div>
+		<div class="chart_cell border_left_top" style="height:20px; width:35px"></div>
+		<div class="chart_cell border_left_top border_right" style="height:20px; width:28px"></div>
+	</div>
+	<div class="chart_row">
+		<div class="chart_cell white_border_left_top" style="height:20px; width:28px"></div>
+		<div class="chart_cell border_left_top" style="height:20px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:20px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:20px; width:56px"></div>
+		<div class="chart_cell border_right border_left_top" style="height:20px; width:55px"></div>
+		<div class="chart_cell border_right border_left_top" style="height:20px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:20px; width:55px"></div>
+		<div class="chart_cell border_left_top" style="height:20px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:20px; width:56px"></div>
+		<div class="chart_cell border_left_top border_right" style="height:20px; width:56px"></div>
+		<div class="chart_cell" style="height:20px; width:21px"></div>
+		<div class="chart_cell border_left_top" style="height:20px; width:35px"></div>
+		<div class="chart_cell border_left_top" style="height:20px; width:35px"></div>
+		<div class="chart_cell border_left_top" style="height:20px; width:35px"></div>
+		<div class="chart_cell border_left_top border_right" style="height:20px; width:28px"></div>
+	</div>
+	<div class="chart_row">
+		<div class="chart_cell border_left_top" style="height:40px; width:28px"></div>
+		<div class="chart_cell border_left_top" style="height:40px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:40px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:40px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:40px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:40px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:40px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:40px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:40px; width:56px"></div>
+		<div class="chart_cell border_left_top border_right" style="height:40px; width:56px"></div>
+		<div class="chart_cell" style="height:40px; width:21px"></div>
+		<div class="chart_cell border_left_top" style="height:40px; width:35px"></div>
+		<div class="chart_cell border_left_top" style="height:40px; width:35px"></div>
+		<div class="chart_cell border_left_top" style="height:40px; width:35px"></div>
+		<div class="chart_cell border_left_top border_right" style="height:40px; width:28px"></div>
+	</div>
+	<div class="chart_row">
+		<div class="chart_cell border_left_top" style="height:25px; width:28px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top border_right" style="height:25px; width:56px"></div>
+		<div class="chart_cell" style="height:25px; width:21px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:35px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:35px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:35px"></div>
+		<div class="chart_cell border_left_top border_right" style="height:25px; width:28px"></div>
+	</div>
+	<div class="chart_row">
+		<div class="chart_cell border_left_top" style="height:25px; width:28px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top border_right" style="height:25px; width:56px"></div>
+		<div class="chart_cell" style="height:25px; width:21px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:35px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:35px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:35px"></div>
+		<div class="chart_cell border_left_top border_right" style="height:25px; width:28px"></div>
+	</div>
+	<div class="chart_row">
+		<div class="chart_cell border_left_top" style="height:25px; width:28px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top border_right" style="height:25px; width:56px"></div>
+		<div class="chart_cell" style="height:25px; width:21px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:35px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:35px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:35px"></div>
+		<div class="chart_cell border_left_top border_right" style="height:25px; width:28px"></div>
+	</div>
+	<div class="chart_row">
+		<div class="chart_cell border_left_top" style="height:25px; width:28px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top border_right" style="height:25px; width:56px"></div>
+		<div class="chart_cell" style="height:25px; width:21px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:35px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:35px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:35px"></div>
+		<div class="chart_cell border_left_top border_right" style="height:25px; width:28px"></div>
+	</div>
+	<div class="chart_row">
+		<div class="chart_cell border_left_top" style="height:25px; width:28px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top border_right" style="height:25px; width:56px"></div>
+		<div class="chart_cell" style="height:25px; width:21px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:35px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:35px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:35px"></div>
+		<div class="chart_cell border_left_top border_right" style="height:25px; width:28px"></div>
+	</div>
+	<div class="chart_row">
+		<div class="chart_cell border_left_top" style="height:25px; width:28px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top border_right" style="height:25px; width:56px"></div>
+		<div class="chart_cell" style="height:25px; width:21px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:35px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:35px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:35px"></div>
+		<div class="chart_cell border_left_top border_right" style="height:25px; width:28px"></div>
+	</div>
+	<div class="chart_row">
+		<div class="chart_cell border_left_top" style="height:25px; width:28px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top border_right" style="height:25px; width:56px"></div>
+		<div class="chart_cell" style="height:25px; width:21px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:35px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:35px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:35px"></div>
+		<div class="chart_cell border_left_top border_right" style="height:25px; width:28px"></div>
+	</div>
+	<div class="chart_row">
+		<div class="chart_cell border_left_top" style="height:25px; width:28px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top border_right" style="height:25px; width:56px"></div>
+		<div class="chart_cell" style="height:25px; width:21px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:35px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:35px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:35px"></div>
+		<div class="chart_cell border_left_top border_right" style="height:25px; width:28px"></div>
+	</div>
+	<div class="chart_row">
+		<div class="chart_cell border_left_top" style="height:25px; width:28px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top border_right" style="height:25px; width:56px"></div>
+		<div class="chart_cell" style="height:25px; width:21px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:35px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:35px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:35px"></div>
+		<div class="chart_cell border_left_top border_right" style="height:25px; width:28px"></div>
+	</div>
+	<div class="chart_row">
+		<div class="chart_cell border_left_top" style="height:25px; width:28px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top border_right" style="height:25px; width:56px"></div>
+		<div class="chart_cell" style="height:25px; width:21px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:35px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:35px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:35px"></div>
+		<div class="chart_cell border_left_top border_right" style="height:25px; width:28px"></div>
+	</div>
+	<div class="chart_row">
+		<div class="chart_cell border_left_top" style="height:25px; width:28px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top border_right" style="height:25px; width:56px"></div>
+		<div class="chart_cell" style="height:25px; width:21px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:35px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:35px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:35px"></div>
+		<div class="chart_cell border_left_top border_right" style="height:25px; width:28px"></div>
+	</div>
+	<div class="chart_row">
+		<div class="chart_cell border_left_top" style="height:25px; width:28px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top border_right" style="height:25px; width:56px"></div>
+		<div class="chart_cell" style="height:25px; width:21px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:35px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:35px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:35px"></div>
+		<div class="chart_cell border_left_top border_right" style="height:25px; width:28px"></div>
+	</div>
+	<div class="chart_row">
+		<div class="chart_cell border_left_top" style="height:25px; width:28px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top border_right" style="height:25px; width:56px"></div>
+		<div class="chart_cell" style="height:25px; width:21px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:35px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:35px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:35px"></div>
+		<div class="chart_cell border_left_top border_right" style="height:25px; width:28px"></div>
+	</div>
+	<div class="chart_row">
+		<div class="chart_cell border_left_top" style="height:25px; width:28px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top border_right" style="height:25px; width:56px"></div>
+		<div class="chart_cell" style="height:25px; width:21px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:35px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:35px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:35px"></div>
+		<div class="chart_cell border_left_top border_right" style="height:25px; width:28px"></div>
+	</div>
+	<div class="chart_row">
+		<div class="chart_cell border_left_top" style="height:25px; width:28px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top border_right" style="height:25px; width:56px"></div>
+		<div class="chart_cell" style="height:25px; width:21px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:35px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:35px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:35px"></div>
+		<div class="chart_cell border_left_top border_right" style="height:25px; width:28px"></div>
+	</div>
+	<div class="chart_row">
+		<div class="chart_cell border_left_top" style="height:25px; width:28px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top border_right" style="height:25px; width:56px"></div>
+		<div class="chart_cell" style="height:25px; width:21px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:35px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:35px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:35px"></div>
+		<div class="chart_cell border_left_top border_right" style="height:25px; width:28px"></div>
+	</div>
+	<div class="chart_row">
+		<div class="chart_cell border_left_top" style="height:25px; width:28px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top border_right" style="height:25px; width:56px"></div>
+		<div class="chart_cell" style="height:25px; width:21px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:35px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:35px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:35px"></div>
+		<div class="chart_cell border_left_top border_right" style="height:25px; width:28px"></div>
+	</div>
+	<div class="chart_row">
+		<div class="chart_cell border_left_top" style="height:25px; width:28px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top border_right" style="height:25px; width:56px"></div>
+		<div class="chart_cell" style="height:25px; width:21px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:35px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:35px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:35px"></div>
+		<div class="chart_cell border_left_top border_right" style="height:25px; width:28px"></div>
+	</div>
+	<div class="chart_row">
+		<div class="chart_cell border_left_top" style="height:25px; width:28px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top border_right" style="height:25px; width:56px"></div>
+		<div class="chart_cell" style="height:25px; width:21px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:35px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:35px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:35px"></div>
+		<div class="chart_cell border_left_top border_right" style="height:25px; width:28px"></div>
+	</div>
+	<div class="chart_row">
+		<div class="chart_cell border_left_top" style="height:25px; width:28px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top border_right" style="height:25px; width:56px"></div>
+		<div class="chart_cell" style="height:25px; width:21px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:35px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:35px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:35px"></div>
+		<div class="chart_cell border_left_top border_right" style="height:25px; width:28px"></div>
+	</div>
+	<div class="chart_row">
+		<div class="chart_cell border_left_top" style="height:25px; width:28px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top border_right" style="height:25px; width:56px"></div>
+		<div class="chart_cell" style="height:25px; width:21px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:35px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:35px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:35px"></div>
+		<div class="chart_cell border_left_top border_right" style="height:25px; width:28px"></div>
+	</div>
+	<div class="chart_row">
+		<div class="chart_cell border_left_top" style="height:25px; width:28px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top border_right" style="height:25px; width:56px"></div>
+		<div class="chart_cell" style="height:25px; width:21px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:35px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:35px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:35px"></div>
+		<div class="chart_cell border_left_top border_right" style="height:25px; width:28px"></div>
+	</div>
+	<div class="chart_row">
+		<div class="chart_cell border_left_top" style="height:25px; width:28px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top border_right" style="height:25px; width:56px"></div>
+		<div class="chart_cell" style="height:25px; width:21px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:35px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:35px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:35px"></div>
+		<div class="chart_cell border_left_top border_right" style="height:25px; width:28px"></div>
+	</div>
+	<div class="chart_row">
+		<div class="chart_cell border_left_top" style="height:25px; width:28px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top border_right" style="height:25px; width:56px"></div>
+		<div class="chart_cell" style="height:25px; width:21px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:35px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:35px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:35px"></div>
+		<div class="chart_cell border_left_top border_right" style="height:25px; width:28px"></div>
+	</div>
+	<div class="chart_row">
+		<div class="chart_cell border_left_top" style="height:25px; width:28px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top border_right" style="height:25px; width:56px"></div>
+		<div class="chart_cell" style="height:25px; width:21px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:35px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:35px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:35px"></div>
+		<div class="chart_cell border_left_top border_right" style="height:25px; width:28px"></div>
+	</div>
+	<div class="chart_row">
+		<div class="chart_cell border_left_top" style="height:25px; width:28px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top border_right" style="height:25px; width:56px"></div>
+		<div class="chart_cell" style="height:25px; width:21px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:35px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:35px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:35px"></div>
+		<div class="chart_cell border_left_top border_right" style="height:25px; width:28px"></div>
+	</div>
+	<div class="chart_row">
+		<div class="chart_cell border_left_top" style="height:25px; width:28px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top border_right" style="height:25px; width:56px"></div>
+		<div class="chart_cell" style="height:25px; width:21px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:35px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:35px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:35px"></div>
+		<div class="chart_cell border_left_top border_right" style="height:25px; width:28px"></div>
+	</div>
+	<div class="chart_row">
+		<div class="chart_cell border_left_top" style="height:25px; width:28px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top border_right" style="height:25px; width:56px"></div>
+		<div class="chart_cell" style="height:25px; width:21px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:35px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:35px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:35px"></div>
+		<div class="chart_cell border_left_top border_right" style="height:25px; width:28px"></div>
+	</div>
+	<div class="chart_row">
+		<div class="chart_cell border_left_top" style="height:25px; width:28px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_left_top border_right" style="height:25px; width:56px"></div>
+		<div class="chart_cell" style="height:25px; width:21px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:35px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:35px"></div>
+		<div class="chart_cell border_left_top" style="height:25px; width:35px"></div>
+		<div class="chart_cell border_left_top border_right" style="height:25px; width:28px"></div>
+	</div>
+	<div class="chart_row">
+		<div class="chart_cell border_bottom border_left_top" style="height:25px; width:28px"></div>
+		<div class="chart_cell border_bottom border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_bottom border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_bottom border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_bottom border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_bottom border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_bottom border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_bottom border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_bottom border_left_top" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_bottom border_left_top border_right" style="height:25px; width:56px"></div>
+		<div class="chart_cell border_bottom" style="height:25px; width:21px"></div>
+		<div class="chart_cell border_bottom border_left_top" style="height:25px; width:35px"></div>
+		<div class="chart_cell border_bottom border_left_top" style="height:25px; width:35px"></div>
+		<div class="chart_cell border_bottom border_left_top" style="height:25px; width:35px"></div>
+		<div class="chart_cell border_bottom border_left_top border_right" style="height:25px; width:28px"></div>
+	</div>
 </div>
 
+<style>
+.chart_cell {
+	display: inline-block;
+	margin: -2px;
+}
+.border_left_top {
+	border-left: 1px solid black;
+	border-top: 1px solid black;
+}
+.white_border_left_top {
+	border-left: 1px solid white;
+	border-top: 1px solid white;
+}
+.border_right {
+	border-right: 1px solid black;
+}
+.border_bottom {
+	border-bottom: 1px solid black;
+}
+.chart_row {
+	margin: 0px 0px 0px 10px;
+}
+</style>
