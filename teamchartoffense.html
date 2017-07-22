@@ -2,7 +2,99 @@
 	<div class="closebtn" ng-click="closeNav()"><img src="./assets/CANCEL_CLOSE.bmp"></img></div>
 	<div class="title">Team Chart</div>
 
-	<div class="chart">
+	<div style="position:absolute; margin: 20px;">
+		<table style="position:absolute; table-layout:fixed; max-height:40px">
+			<tr height="20px">
+				<td width="28px"></td>
+				<td width="56px"></td>
+				<td width="56px"></td>
+				<td width="56px"></td>
+				<td width="56px"></td>
+				<td width="56px"></td>
+				<td width="56px"></td>
+				<td width="56px"></td>
+				<td width="56px"></td>
+				<td width="56px"></td>
+				<td width="21px"></td>
+				<td width="35px"></td>
+				<td width="35px"></td>
+				<td width="35px"></td>
+				<td width="28px"></td>
+			</tr>
+			<tr height="20px">
+				<td width="28px"></td>
+				<td width="56px" class="cell-border" colspan="4">running plays</td>
+				<td width="56px" class="cell-border"></td>
+				<td width="56px" class="cell-border" colspan="4">passing plays</td>
+				<td width="21px"></td>
+				<td width="35px" class="cell-border" colspan="3" rowspan="2"></td>
+				<td width="28px"</td>
+			</tr>
+			<tr height="20px">
+				<td width="28px"></td>
+				<td width="56px" class="cell-border">1</td>
+				<td width="56px" class="cell-border">2</td>
+				<td width="56px" class="cell-border">3</td>
+				<td width="56px" class="cell-border">4</td>
+				<td width="56px" class="cell-border">5</td>
+				<td width="56px" class="cell-border">6</td>
+				<td width="56px" class="cell-border">7</td>
+				<td width="56px" class="cell-border">8</td>
+				<td width="56px" class="cell-border">9</td>
+				<td width="21px"></td>
+				<!-- <td width="35px" class="cell-border"></td>
+				<td width="35px" class="cell-border"></td>
+				<td width="35px" class="cell-border"></td> -->
+				<td width="28px"></td>
+			</tr>
+			<tr height="40px">
+				<td width="28px" class="cell-border">#</td>
+				<td width="56px" class="cell-border">counter</td>
+				<td width="56px" class="cell-border">line plunge</td>
+				<td width="56px" class="cell-border">end reverse</td>
+				<td width="56px" class="cell-border">draw</td>
+				<td width="56px" class="cell-border">option</td>
+				<td width="56px" class="cell-border">screen</td>
+				<td width="56px" class="cell-border">sprint out</td>
+				<td width="56px" class="cell-border">bootleg</td>
+				<td width="56px" class="cell-border">drop back</td>
+				<td width="21px"></td>
+				<td width="35px" class="cell-border">B</td>
+				<td width="35px" class="cell-border">QR</td>
+				<td width="35px" class="cell-border">QT</td>
+				<td width="28px" class="cell-border">#</td>
+			</tr>
+			<tr height="25px">
+				<td width="28px" class="cell-border">10</td>
+				<td width="56px" class="cell-border"></td>
+				<td width="56px" class="cell-border"></td>
+				<td width="56px" class="cell-border"></td>
+				<td width="56px" class="cell-border"></td>
+				<td width="56px" class="cell-border"></td>
+				<td width="56px" class="cell-border"></td>
+				<td width="56px" class="cell-border"></td>
+				<td width="56px" class="cell-border"></td>
+				<td width="56px" class="cell-border"></td>
+				<td width="21px"></td>
+				<td width="35px" class="cell-border"></td>
+				<td width="35px" class="cell-border"></td>
+				<td width="35px" class="cell-border"></td>
+				<td width="28px" class="cell-border">10</td>
+			</tr>
+		</table>
+	</div>
+</div>
+
+<style>
+.cell-border {
+	border: 1px solid black;
+	text-align: center;
+	text-justify: middle;
+}
+</style>
+
+
+	<!-- <div class="chart">
 		<div>
 			<div class="cell cell_20_28 cell_border_white">.</div>
 			<div class="cell cell_20_224 cell_border">running plays</div>
@@ -47,9 +139,9 @@
 			<div class="cell cell_40_28 cell_border">#</div>
 		</div>
 	</div>
-</div>
+</div> -->
 
-<style>
+<!-- <style>
 .chart {
 	margin: 0px 0px 0px 10px;
 	/* border: 1px solid black; */
@@ -174,4 +266,4 @@
 	width: 35px;
 	background-color: yellow;
 }
-</style>
+</style> -->
