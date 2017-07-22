@@ -54,7 +54,7 @@ angular.module("AFootball")
 				});
 
 				scope.hometeamselect = function() {
-			        document.getElementById("teamchartoffense").style.width = "800px";
+			        document.getElementById("teamchartoffense").style.width = "900px";
 				};
 
 				scope.visitorteamselect = function() {
