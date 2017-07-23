@@ -54,7 +54,6 @@ class JTeam {
 		{
 			index++
 			items = lines[index].split(',');
-			console.log("-----> r: " + r);
 
 			this.offenseResults[r][Plays.LinePlunge].Interpret(items[1]);
 			// this.offenseResults[r][Plays.Counter].Interpret(items[2]);
