@@ -1,9 +1,9 @@
-<div id="teamchartoffense" class="sidenav">
+<div id="teamchartoffense" class="sidenav" style="background-color: darkgreen;">
 	<div class="closebtn" ng-click="closeNav()"><img src="./assets/CANCEL_CLOSE.bmp"></img></div>
 	<!-- <div class="title">Team Chart</div> -->
 
-	<div style="position:absolute; margin: 20px">
-		<table style="position:absolute; table-layout:fixed; max-height:40px; border: 1px solid black">
+	<div style="position:absolute; margin: 20px; background-color: white">
+		<table style="position:absolute; table-layout:fixed; max-height:40px; border: 1px solid black; background-color: white">
 			<tr height="2px">
 				<td width="28px"></td>
 				<td width="56px"></td>
@@ -67,19 +67,19 @@
 			</tr>
 			<tr height="25px" ng-repeat="result in results">
 				<td width="28px" class="cell-border">{{result.lineno}}</td>
-				<td width="56px" class="cell-border"></td>
-				<td width="56px" class="cell-border"></td>
-				<td width="56px" class="cell-border"></td>
-				<td width="56px" class="cell-border"></td>
-				<td width="56px" class="cell-border"></td>
-				<td width="56px" class="cell-border"></td>
-				<td width="56px" class="cell-border"></td>
-				<td width="56px" class="cell-border"></td>
-				<td width="56px" class="cell-border"></td>
+				<td width="56px" class="cell-border" ng-style="{'background-color': '{{result.results[0].bgcolor}}'}">{{result.results[0].text}}</td>
+				<td width="56px" class="cell-border" ng-style="{'background-color': '{{result.results[1].bgcolor}}'}">{{result.results[1].text}}</td>
+				<td width="56px" class="cell-border" ng-style="{'background-color': '{{result.results[2].bgcolor}}'}">{{result.results[2].text}}</td>
+				<td width="56px" class="cell-border" ng-style="{'background-color': '{{result.results[3].bgcolor}}'}">{{result.results[3].text}}</td>
+				<td width="56px" class="cell-border" ng-style="{'background-color': '{{result.results[4].bgcolor}}'}">{{result.results[4].text}}</td>
+				<td width="56px" class="cell-border" ng-style="{'background-color': '{{result.results[5].bgcolor}}'}">{{result.results[5].text}}</td>
+				<td width="56px" class="cell-border" ng-style="{'background-color': '{{result.results[6].bgcolor}}'}">{{result.results[6].text}}</td>
+				<td width="56px" class="cell-border" ng-style="{'background-color': '{{result.results[7].bgcolor}}'}">{{result.results[7].text}}</td>
+				<td width="56px" class="cell-border" ng-style="{'background-color': '{{result.results[8].bgcolor}}'}">{{result.results[8].text}}</td>
 				<td width="21px"></td>
-				<td width="35px" class="cell-border"></td>
-				<td width="35px" class="cell-border"></td>
-				<td width="35px" class="cell-border"></td>
+				<td width="35px" class="cell-border" ng-style="{'background-color': '{{result.results[9].bgcolor}}'}">{{result.results[9].text}}</td>
+				<td width="35px" class="cell-border" ng-style="{'background-color': '{{result.results[10].bgcolor}}'}">{{result.results[10].text}}</td>
+				<td width="35px" class="cell-border" ng-style="{'background-color': '{{result.results[11].bgcolor}}'}">{{result.results[11].text}}</td>
 				<td width="28px" class="cell-border">{{result.lineno}}</td>
 			</tr>
 		</table>
